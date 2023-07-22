@@ -1,0 +1,53 @@
+.hero{
+    display: flex;
+    height: 491px;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 41.15%, rgba(0, 0, 0, 0.80) 100%),url(../img/banner.webp) , lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    
+
+.hero__container{
+    display: flex;
+    width: 1136px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.hero__container h1{
+    color: var(--preto-branco, #FFF);
+    font-family: Raleway;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+.hero__container h2{
+    color: var(--preto-branco, #FFF);
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero__boton{
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--azul-100, #2A7AE4);
+    color: var(--preto-blanco);
+    border: none;
+    
+}

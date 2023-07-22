@@ -1,0 +1,28 @@
+:root{
+    --Azul-100: #2A7AE4;
+    --preto-100:#464646;
+    --petro50:#A2A2A2;
+    --preto-blanco:#FFFFFF;
+}
+
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    
+    transform: scale(1.1);
+}
+    

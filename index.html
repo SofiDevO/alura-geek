@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="./assets/styles/root.css">
+    <link rel="stylesheet" href="./assets/styles/header.css">
+    <link rel="stylesheet" href="./assets/styles/hero.css">
+    <link rel="stylesheet" href="./assets/styles/dark-mode.css">
+    <link rel="stylesheet" href="./assets/styles/productos.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo-busqueda">
+                <div class="logo">
+                    <a href="index.html" class="header__logo__link">
+                        <img src="./assets/logos/Logo_alura_geek.svg" alt="logo Alura Geek" class="header__logo">
+                    </a>
+                </div>
+                <div class="header__search">
+                    <input type="text" class="search__input" placeholder="¿Qué deseas Buscar?">
+                    <a href="#" class="icon__search"></a> 
+                </div>
+
+            </div>
+            <a href="#" class="header__login__link">
+                <button class="header__loginBtn">Login</button>
+            </a>
+        </div>
+        <div class="toogle-btn">
+            <input class="toogleBtn" type="checkbox" id="checkbox">
+            <label for="checkbox" class="switch">
+                <div class="powersign"></div>
+            </label>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <h1>Febrero Promocional</h1>
+                <h2>Productos selecionados con 33% de descuento</h2>
+                <a href="#" class="hero__btn__link">
+                    <button class="hero__boton">Ver consolas</button>
+                </a>
+            </div>
+        </section>
+        <section class="productos">
+            <div class="productos__barra">
+                <h3 class="productos__titulo">Star Wars</h3>
+                <button class="productos__verMas">Ver todo<img src="./assets/svg/arrow.svg" alt="ver más" class="productos__imgBtn"></button>
+            </div>
+            <productos__contnedor>
+                <productos_caja></productos_caja>
+                <productos_caja></productos_caja>
+                <productos_caja></productos_caja>
+                <productos_caja></productos_caja>
+                <productos_caja></productos_caja>
+                <productos_caja></productos_caja>
+            </productos__contnedor>
+        </section>
+    </main>
+
+
+    <script type="module" src="./js/modules.js"></script>
+    
+</body>
+</html>
