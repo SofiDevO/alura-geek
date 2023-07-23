@@ -6,6 +6,15 @@
     flex-direction: column;
     overflow: hidden;
 }
+.productos__flia{
+    display: flex;
+    width: 160rem;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 6.4rem; */
+    padding: 6.4rem 0;
+}
+
 .productos__barra{
     display: flex;
     max-width: 77%;
@@ -50,11 +59,10 @@
 
 .productos__tarjetas{
     display: flex;
-    gap: 50px;
     justify-content: space-evenly;
     width: 100%;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 
 
