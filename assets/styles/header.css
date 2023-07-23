@@ -1,27 +1,31 @@
 .header{
-    display: flex;
-    padding: 7px 0px;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    background-color: #ffffff;
-    width: 100%;
-    gap: 32px;
+  display: flex;
+  /* padding: 7px 3px; */
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  gap: 32px;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 600;
 }
 
+
 .header__container{
-    display: flex;
-    width: 70rem;
-    padding: 32px 0px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  min-width: 46%;
+  width: 83%;
+  padding: 32px 0px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
 .header__logo-busqueda{
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 3.5rem;
 }
 .header__search {
     display: flex;
@@ -65,11 +69,7 @@
 }
 
 /* Toogle dark mode */
-.toogle-btn{
-    display: flex;
-    justify-content: flex-end;
-    width: 22%;
-}
+
 
 #checkbox {
     display: none;
@@ -77,8 +77,8 @@
   
   .switch {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: rgb(99, 99, 99);
     border-radius: 50%;
     z-index: 1;
@@ -92,8 +92,8 @@
   
   .powersign {
     position: relative;
-    width: 30%;
-    height: 30%;
+    width: 39%;
+    height: 38%;
     border: 4px solid rgb(48, 48, 48);
     border-radius: 50%;
     display: flex;

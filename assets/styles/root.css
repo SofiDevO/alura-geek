@@ -5,7 +5,10 @@
     --preto-blanco:#FFFFFF;
 }
 
-
+html{
+    /* With this font-size,a  rem will be equal to 10px */
+    font-size: 62.5%; 
+}
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;

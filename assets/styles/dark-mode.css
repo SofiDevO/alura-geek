@@ -6,6 +6,13 @@
         color: var(--preto-blanco);
 }
 
+
+
+.dark-mode .productos__titulo{
+    color: var(--preto-branco, #FFF);
+}
+    
+
 /* toogle BTN */
 .dark-mode #checkbox + .switch .powersign {
     border: 4px solid rgb(255, 255, 255);
