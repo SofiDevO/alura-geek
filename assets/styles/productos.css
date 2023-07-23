@@ -3,6 +3,7 @@
     align-items: center;
     gap: 74px;
     flex-direction: column;
+    overflow: hidden;
 }
 .productos__barra{
     display: flex;
