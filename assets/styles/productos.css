@@ -1,3 +1,4 @@
+
 .productos{
     display: flex;
     align-items: center;
@@ -55,6 +56,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
 
 
 /* Cards de producto */
@@ -227,3 +229,21 @@
     transform: translateY(0px) scale(1.2);
     transition-delay: .7s;
 } 
+/* Hide cards on different screen size */
+@media  (max-width:1500px){
+   .productos__caja:last-child{
+        display: none;
+   }
+}
+@media  (max-width:1200px){
+   .productos__caja:nth-child(3){
+        display: none;
+   }
+}
+@media  (max-width:920px){
+   .productos__caja:nth-child(2){
+        display: none;
+   }
+}
+
+/* MOBILE VIEW */

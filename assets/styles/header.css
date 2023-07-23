@@ -14,18 +14,20 @@
 
 .header__container{
   display: flex;
-  min-width: 46%;
-  width: 83%;
+  min-width: 59%;
+  width: 96%;
   padding: 32px 0px;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 
 .header__logo-busqueda{
-    display: flex;
-    align-items: center;
-    gap: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+  width: 58%;
 }
 .header__search {
     display: flex;
@@ -56,6 +58,12 @@
     flex-shrink: 0;
     background-image: url(../svg/icon-search.svg);
 }
+
+.header__btn{
+  display: flex;
+  justify-content: flex-end;
+  width: 23%;
+}
 .header__loginBtn{
     display: flex;
     width: 182px;
@@ -69,7 +77,11 @@
 }
 
 /* Toogle dark mode */
-
+.toogle-btn{
+  display: flex;
+  justify-content: flex-start;
+  
+}
 
 #checkbox {
     display: none;
@@ -120,6 +132,47 @@
     top: -60%;
     z-index: 3;
   }
+
+  @media (max-width:950px){
+    .header__container {
+      display: flex;
+      min-width: 59%;
+      width: 96%;
+      padding: 32px 0px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  .header__logo{
+    width: 100px;
+  }
+  .header__search{
+    display: flex;
+    width: 27.2rem;
+    padding: .8rem 1.6rem;
+    align-items: center;
+    gap: 8px;
+  }
+  .header__btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 26%;
+}
+  .header__loginBtn{
+    display: flex;
+    width: 12.7rem;
+    padding: 1.2rem 1.6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .switch {
+    width: 45px;
+    height: 45px;
+  }
+
+
+}
   
   
   
