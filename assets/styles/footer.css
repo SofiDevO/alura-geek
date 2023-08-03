@@ -3,8 +3,6 @@
     padding: 64px;
     justify-content: center;
     align-items: center;
-    gap: 115px;
-    align-self: stretch;
     background: var(--azul-10, #EAF2FD);
 }
 
@@ -12,15 +10,21 @@
     display: flex;
     width: 1136px;
     align-items: flex-start;
-    gap: 112px;
+    gap: 11.2rem;
+}
+.footer__logolinkks{
+    display: flex;
+    justify-content: space-evenly;
+    width: 41%;
+    gap: 11.2rem;
 }
 
 .footer__logo{
     display: flex;
-width: 176px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
+    width: 176px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0; 
 }
 
 .footer__links{
@@ -30,7 +34,7 @@ flex-shrink: 0;
 
 .footer__links ul{
     display: flex;
-    width: 176px;
+    width: 234px;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
@@ -41,22 +45,22 @@ flex-shrink: 0;
     font-family: Raleway;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
 }
 
 .footer__contacto{
     display: flex;
-    width: 560px;
+    width: 56rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 0.8rem;
     flex-shrink: 0;
 }
 .footer__contacto h2{
     color: var(--preto-100, #464646);
     font-family: Raleway;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -64,18 +68,18 @@ flex-shrink: 0;
 
 .contacto__nombre{
     display: flex;
-    padding-top: 8px;
+    padding: 0rem 1.2rem;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
-    gap: 7px;
+    gap: 0.7rem;
     align-self: stretch;
     background: var(--preto-branco, #FFF);
     font-family: Raleway;
     border-radius: 4px;
     padding-left: 12px;
-
-    
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    height: 6rem;
 }
 .nombre{
     display: flex;
@@ -83,6 +87,11 @@ flex-shrink: 0;
     gap: 4px;
     align-self: stretch;
     border: none;
+    font-family: Raleway;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
 }
 .nombre::placeholder{
     font-size: 16px;
@@ -101,3 +110,34 @@ font-weight: 400;
 line-height: 16px; /* 133.333% */
 }
 
+.footer__textarea{
+    width: 56rem; 
+    height: 8rem;
+    color: var(--preto-50, #A2A2A2);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    resize: none;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    align-self: stretch;
+    padding: 2rem 1.2rem;
+}
+.submit{
+    display: flex;
+    padding: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: var(--azul-100, #2A7AE4);
+    color: var(--preto-branco, #FFF);
+    font-family: Raleway;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 14.4rem;
+}
