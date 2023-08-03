@@ -1,0 +1,25 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "Alura geek e-commerce project for Oracle/Alura latam program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofiDevO/alura-geek.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "CRUD",
+    "alura",
+    "latam"
+  ],
+  "author": "SofiDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SofiDevO/alura-geek/issues"
+  },
+  "homepage": "https://github.com/SofiDevO/alura-geek#readme"
+}
