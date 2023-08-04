@@ -39,3 +39,9 @@ background-color: rgb(146, 180, 184);
 .dark-mode #checkbox + .switch .powersign::before {
 background-color: rgb(146, 180, 184);
 }
+
+
+
+.dark-mode .rodapie__link{
+    color: var(--Azul-100);
+}

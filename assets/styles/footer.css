@@ -12,7 +12,7 @@
     align-items: flex-start;
     gap: 11.2rem;
 }
-.footer__logolinkks{
+.footer__logolinks{
     display: flex;
     justify-content: space-evenly;
     width: 41%;
@@ -51,7 +51,7 @@
 
 .footer__contacto{
     display: flex;
-    width: 56rem;
+    width: 50%;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.8rem;
@@ -80,6 +80,7 @@
     padding-left: 12px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     height: 6rem;
+    width: 100%;
 }
 .nombre{
     display: flex;
@@ -111,7 +112,7 @@ line-height: 16px; /* 133.333% */
 }
 
 .footer__textarea{
-    width: 56rem; 
+    width: 100%;
     height: 8rem;
     color: var(--preto-50, #A2A2A2);
     font-family: 'Raleway';
@@ -141,4 +142,43 @@ line-height: 16px; /* 133.333% */
     line-height: normal;
     width: 14.4rem;
     height: 5.1rem;
+}
+.rodapie{
+    display: flex;
+    padding: 3.2rem;
+    align-items: center;
+    gap: 0.3rem;
+    flex-direction: column;
+    justify-content: center;
+}
+.rodapie__container{
+    width: 13rem;
+    color: #000000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rodapie__link{
+    color: var(--main-color);
+}
+.rodapie__link:hover{
+    transform: scale(1.2);
+}
+
+.rodapie__credito p{
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:1024px){
+    .footer__logolinks {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: unset;
+        flex-direction: column;
+        align-items: center;;
+    }
 }
