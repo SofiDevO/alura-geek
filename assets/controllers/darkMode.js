@@ -1,7 +1,7 @@
 
 const d = document;
 const button = d.querySelector('.toogleBtn');
-
+const iconoMoon = d.querySelector(".fa-moon")
 let darkModeState = false;
 
 // MediaQueryList object
@@ -11,7 +11,15 @@ const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 export default function toggleDarkMode(state) {
   document.documentElement.classList.toggle("dark-mode", state);
   darkModeState = state;  
-}
+  if(document.documentElement.classList.contains("dark-mode")){
+        iconoMoon.classList.remove("fa-moon");
+        iconoMoon.classList.add("fa-sun");
+      }else{
+        iconoMoon.classList.remove("fa-sun");
+        iconoMoon.classList.add("fa-moon");
+      } 
+    }
+  
 // Sets localStorage state
 function setDarkModeLocalStorage(state) {
   localStorage.setItem("dark-mode", state);
@@ -34,3 +42,7 @@ button.addEventListener("click",() => {
   setDarkModeLocalStorage(darkModeState);
 });
 
+
+
+
+    

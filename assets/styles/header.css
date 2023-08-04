@@ -165,11 +165,17 @@ filter: drop-shadow(1px 1px 3px var(--main-color));
     right: 9rem;
 }
   
-  .powersign {
+  .fa-moon {
     position: relative;
-    width: 39%;
-    height: 38%;
-    border: 4px solid rgb(48, 48, 48);
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fa-sun {
+    position: relative;
+    font-size: 2rem;
     border-radius: 50%;
     display: flex;
     align-items: center;

@@ -5,6 +5,7 @@ const d = document;
 const botonTropper = d.querySelector('[data-menu="float"]');
 const botones = d.querySelectorAll("[data-btns]");
 
+
 export default botonTropper.addEventListener("click", () => {
 	botones.forEach((boton) => {
         if(boton.classList.contains("none")){
@@ -18,13 +19,9 @@ export default botonTropper.addEventListener("click", () => {
             });
         });
 	});
-                
-            
-
-
-        
 });
 
-	
+
+
 
 
