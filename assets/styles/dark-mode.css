@@ -1,8 +1,8 @@
 .dark-mode .header{
-    background-color: rgb(14, 13, 13);
+    background-color: var(--dark-gray);
 }
 .dark-mode body{
-        background: rgb(14, 13, 13);
+        background: rgb(6, 6, 6);
         color: var(--preto-blanco);
 }
 
@@ -40,8 +40,13 @@ background-color: rgb(146, 180, 184);
 background-color: rgb(146, 180, 184);
 }
 
+.dark-mode .footer{
+    background: unset;
+}
 
-
+.dark-mode .rodapie{
+    background: var(--dark-gray);
+}
 .dark-mode .rodapie__link{
     color: var(--Azul-100);
 }

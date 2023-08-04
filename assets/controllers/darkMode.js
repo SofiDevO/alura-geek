@@ -17,10 +17,7 @@ function setDarkModeLocalStorage(state) {
   localStorage.setItem("dark-mode", state);
 }
 
-
-
-
-// Initial setting darkmode
+// Initial setting
 toggleDarkMode(useDark.matches);
 toggleDarkMode(localStorage.getItem("dark-mode") == "true");
 
@@ -36,3 +33,4 @@ button.addEventListener("click",() => {
   toggleDarkMode(darkModeState);
   setDarkModeLocalStorage(darkModeState);
 });
+

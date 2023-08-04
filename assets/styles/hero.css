@@ -51,7 +51,7 @@
     border: none;    
 }
 
-@media (max-width:950px){
+@media screen and (max-width:1024px){
     .hero{
         display: flex;
         height: 453px;
@@ -74,5 +74,27 @@
         align-items: center;
         gap: 10px;
     }
-        
+}
+
+@media screen and (max-width:768px){
+    .hero{
+        display: flex;
+        height: 38.2rem;
+        padding: 1.6rem;
+      }
+      .hero__container{
+        justify-content: flex-end;
+        align-self: stretch;
+      }
+      .hero__container h1{
+        font-size: 2.2rem;
+        margin: 3px 0;
+      }
+      .hero__container h2{
+        font-size: 1.4rem;
+      }
+      .hero__boton{
+        padding: 1.2rem 1.6rem;
+        gap: 1rem;
+      }
 }

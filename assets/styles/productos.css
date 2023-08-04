@@ -255,3 +255,25 @@
 }
 
 /* MOBILE VIEW */
+
+@media screen and (max-width:768px){
+    .productos{
+        display: flex;
+        padding: 1.6rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+    }
+    .productos__flia{
+        align-items: flex-start;
+    gap: 1.6rem;
+    align-self: stretch;
+    }
+    .productos__titulo{
+        font-size: 2.2rem;
+    }
+    .productos__verMas h4{
+        font-size: 1.4rem;
+    }
+
+}

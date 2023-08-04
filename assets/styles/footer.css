@@ -172,6 +172,8 @@ line-height: 16px; /* 133.333% */
     font-size: 1.3rem;
 }
 
+
+
 @media screen and (max-width:1024px){
     .footer__logolinks {
         display: flex;
@@ -180,5 +182,26 @@ line-height: 16px; /* 133.333% */
         gap: unset;
         flex-direction: column;
         align-items: center;;
+    }
+}
+
+@media screen and (max-width:768px){
+    .footer {
+        display: flex;
+        padding: 64px;
+        justify-content: center;
+        align-items: center;
+        }
+        .footer__container {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            gap: 3.2rem;
+            flex-direction: column;
+        }
+    .footer__contacto {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
