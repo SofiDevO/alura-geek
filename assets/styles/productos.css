@@ -252,11 +252,11 @@
 
 /* Hide cards on different screen size */
 @media  (max-width:1500px){
-   .productos__caja:last-child{
-        display: none;
-   }
-  
+.productos__caja:nth-child(4){
+    display: none;
 }
+}
+
 @media  (max-width:1385px){
    .productos__caja:nth-child(3){
         display: none;

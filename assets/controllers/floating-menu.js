@@ -1,5 +1,3 @@
-/** @format */
-
 const d = document;
 
 const botonTropper = d.querySelector('[data-menu="float"]');
