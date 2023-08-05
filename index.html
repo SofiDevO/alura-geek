@@ -430,19 +430,20 @@
             </div>
 
 
-            <div class="footer__contacto">
+            <form class="footer__contacto">
                 <h2>Hable con nosotros</h2>
                 <div class="contacto__nombre">
                     <label class="label__nombre" for="name">Nombre</label>
-                    <input class="nombre" type="name" placeholder="Jhon Doe" title="Solo letras y espacios en blanco"
-                        required>
+                    <input class="nombre" type="name" placeholder="Jhon Doe" title="Solo letras y espacios en blanco" required>
+                </div>
+                <div class="contacto__nombre">
+                    <input class="nombre" type="email" placeholder="ejmplo@correo.com" title="Este no es un correo válido" required>
                 </div>
 
-
                 <textarea class="footer__textarea" name="" cols="30" rows="10"
-                    placeholder="Escribe tu mensaje"></textarea>
+                    placeholder="Escribe tu mensaje" required></textarea>
                 <input type="submit" class="submit">
-            </div>
+            </form>
         </div>
     </footer>
     <section class="rodapie">
