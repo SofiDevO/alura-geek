@@ -20,3 +20,10 @@ export default botonTropper.addEventListener("click", () => {
 		});
 	});
 });
+
+
+window.addEventListener("scroll", (e) => {
+	botones.forEach((boton) => {
+	boton.classList.add("none");
+    });
+});

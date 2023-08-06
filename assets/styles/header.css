@@ -1,6 +1,9 @@
 .none{
     display: none;
   }
+  .hide{
+    display:inline-block
+  }
 .header{
   display: flex;
     padding: 7px 3px;
@@ -136,6 +139,7 @@ filter: drop-shadow(1px 1px 3px var(--main-color));
   }
 }
 
+
 /* Toogle dark mode */
 .toogle-btn{
   width: 10%;
@@ -255,11 +259,12 @@ filter: drop-shadow(1px 1px 3px var(--main-color));
   }
   
 }
-.none{
-  display: none;
-}
 
 @media screen and (max-width:768px){
+  .hide{
+    display:none;
+  }  
+  
   .header{
     padding: 7px 10px;
   }

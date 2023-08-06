@@ -6,18 +6,18 @@ const iconBuscar = d.querySelector(".icon__search");
 
 /* Function to display the search bar */
 export default focusInput.addEventListener("click", () => {
-	searchContainer.classList.remove("none");
+	searchContainer.classList.remove("hide");
 	inputSearch.focus();
 });
 
 /* Function to hide the search bar */
 d.addEventListener("click", (e) => {
 	if (!inputSearch.contains(e.target) && !focusInput.contains(e.target)) {
-		searchContainer.classList.add("none");
+		searchContainer.classList.add("hide");
 	}
 });
 window.addEventListener("scroll", (e) => {
-	searchContainer.classList.add("none");
+	searchContainer.classList.add("hide");
 });
 
 /* Search function */
