@@ -22,5 +22,6 @@ window.addEventListener("scroll", (e) => {
 
 /* Search function */
 iconBuscar.addEventListener("click", () => {
-	console.log("I am searching");
+	let buscar = inputSearch.value
+		console.log(buscar)
 });
