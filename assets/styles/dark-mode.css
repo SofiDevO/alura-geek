@@ -36,6 +36,20 @@ background-color: rgb(146, 180, 184);
 border: 2px solid rgb(255, 255, 255);
 background-color: rgb(146, 180, 184);
 }
+.dark-mode .to__top{
+    box-shadow: 0px 0px 1px rgb(151, 243, 255) inset,
+    0px 0px 2px rgb(151, 243, 255) inset,
+    0px 0px 10px rgb(151, 243, 255) inset,
+    0px 0px 40px rgb(151, 243, 255),
+    0px 0px 100px rgb(151, 243, 255),
+    0px 0px 5px rgb(151, 243, 255);
+border: 2px solid rgb(255, 255, 255);
+background-color: rgb(146, 180, 184);
+}
+.dark-mode .bi-chevron-double-up{
+color: rgb(255, 255, 255);   
+}
+
 
 .dark-mode .search__img{
     filter: invert(100%);

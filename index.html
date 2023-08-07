@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/root.css">
     <link rel="stylesheet" href="./assets/styles/header.css">
@@ -44,25 +45,32 @@
             <div class="header__btn">
                 <a href="#" class="header__login__link">
                     <button class="header__loginBtn">Login</button>
+
                 </a>
             </div>
         </div>
     </header>
-    <div class="icon__top-container">
-        <div class="to__top" data-menu="float">
+    <div class="menu__flotante">
+        <div class="icono__menu" data-menu="float">
             <img src="./assets/svg/starwars-tropper.svg" alt="trooper icon button">
         </div>
 
         <div class="toogle-btn none" data-btns>
             <input class="toogleBtn" type="checkbox" id="checkbox">
             <label for="checkbox" class="switch">
-                <!-- <div class="powersign"></div> -->
+
                 <i class="fa-solid fa-moon "></i>
             </label>
         </div>
         <div class="search__btn none" data-btns>
-            <a class="search__link"><img class="search__img" src="./assets/svg/icon-search.svg"
-                    alt="trooper icon button"></a>
+            <a class="search__link">
+                <img class="search__img" src="./assets/svg/icon-search.svg" alt="trooper icon button">
+            </a>
+        </div>
+        <div class="icon__top-container">
+            <div class="to__top" data-menu="float">
+                <a href="#"><i class="bi bi-chevron-double-up"></i></a>
+            </div>
         </div>
     </div>
 
@@ -391,7 +399,8 @@
                     <div class="productos__caja">
                         <div class="card">
                             <div class="imgBx nemesis">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMVyeXmOzjpFOM10Nx2FjK8L_arMlWGD1qkQ&usqp=CAU">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMVyeXmOzjpFOM10Nx2FjK8L_arMlWGD1qkQ&usqp=CAU">
                             </div>
 
                             <div class="contentBx">
@@ -433,24 +442,28 @@
                 <h2>Hable con nosotros</h2>
                 <div class="contacto__nombre">
                     <label class="label__nombre" for="name">Nombre</label>
-                    <input class="nombre" type="name" placeholder="Jhon Doe" title="Solo letras y espacios en blanco" required>
+                    <input class="nombre" type="name" placeholder="Jhon Doe" title="Solo letras y espacios en blanco"
+                        required>
                 </div>
                 <div class="contacto__nombre">
-                    <input class="nombre" type="email" placeholder="ejmplo@correo.com" title="Este no es un correo válido" required>
+                    <input class="nombre" type="email" placeholder="ejmplo@correo.com"
+                        title="Este no es un correo válido" required>
                 </div>
 
-                <textarea class="footer__textarea" name="" cols="30" rows="10"
-                    placeholder="Escribe tu mensaje" required></textarea>
+                <textarea class="footer__textarea" name="" cols="30" rows="10" placeholder="Escribe tu mensaje"
+                    required></textarea>
                 <input type="submit" class="submit">
             </form>
         </div>
     </footer>
     <section class="rodapie">
         <div class="rodapie__container">
-            <a class="rodapie__link" href="https://github.com/SofiDevO/alura-geek" target="_blank" rel="nofollow nopenner no-referrer">
+            <a class="rodapie__link" href="https://github.com/SofiDevO/alura-geek" target="_blank"
+                rel="nofollow nopenner no-referrer">
                 <i class="fa-brands fa-github-alt"></i>
             </a>
-            <a class="rodapie__link" href="https://www.linkedin.com/in/sofidev/" target="_blank" rel="nofollow nopenner no-referrer">
+            <a class="rodapie__link" href="https://www.linkedin.com/in/sofidev/" target="_blank"
+                rel="nofollow nopenner no-referrer">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
             <a class="rodapie__link" href="https://itssofi.dev/" target="_blank" rel="nofollow nopenner no-referrer">

@@ -17,9 +17,12 @@
     "latam"
   ],
   "author": "SofiDev",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/SofiDevO/alura-geek/issues"
   },
-  "homepage": "https://itssofi.dev/"
+  "homepage": "https://itssofi.dev/",
+  "dependencies": {
+    "bootstrap-icons": "^1.10.5"
+  }
 }
