@@ -269,6 +269,13 @@ filter: drop-shadow(1px 1px 3px var(--main-color));
     padding: 7px 10px;
   }
 
+  .logo{
+    width: 100%;
+  }
+  .header__logo{
+    width: 13rem
+  }
+ 
   .header__search{
     position: absolute;
     top: 11rem;

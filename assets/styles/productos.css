@@ -141,9 +141,16 @@
 .productos__caja .card  .grogu img {
     width: 20rem;
 }
+.productos__caja .card  .nemesis img {
+    width: 18rem;
+}
 
 .productos__caja .card .vader2  img {
     width: 23rem;
+    transform: translate(-50%, -50%) rotate(5deg);
+}
+.productos__caja .card .spidy  img {
+    width: 12rem;
     transform: translate(-50%, -50%) rotate(5deg);
 }
 .productos__caja .card .contentBx {
