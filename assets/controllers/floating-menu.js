@@ -27,3 +27,15 @@ window.addEventListener("scroll", (e) => {
 	boton.classList.add("none");
     });
 });
+
+
+/* Boton "To top" */
+
+const toTop = d.querySelector(".to__top") 
+window.addEventListener("scroll",()=>{
+	if(window.pageYOffset > 2150){
+		toTop.classList.add("active");
+	}else{
+		toTop.classList.remove("active");
+	}
+})
