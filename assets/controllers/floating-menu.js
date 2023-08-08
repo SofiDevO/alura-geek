@@ -33,7 +33,7 @@ window.addEventListener("scroll", (e) => {
 
 const toTop = d.querySelector(".to__top") 
 window.addEventListener("scroll",()=>{
-	if(window.pageYOffset > 2150){
+	if(window.pageYOffset > 900){
 		toTop.classList.add("active");
 	}else{
 		toTop.classList.remove("active");

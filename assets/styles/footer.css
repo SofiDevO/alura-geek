@@ -98,9 +98,7 @@
     font-size: 16px;
 }
 
-.nombre:focus-visible{
-    outline: none;
-  }
+
 
 .label__nombre{
     color: var(--preto-50, #A2A2A2);

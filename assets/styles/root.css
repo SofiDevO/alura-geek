@@ -6,6 +6,8 @@
     --preto-blanco:#FFFFFF;
     --dark-gray: rgb(19, 19, 19);
     --main-color: rgb(0, 0, 0);
+    --preto-30:rgb(200, 200, 200);
+    --preto-05: rgb(245, 245, 245);
 }
 
 html{
@@ -37,4 +39,8 @@ a:hover{
 li{
     list-style: none;
 }
+
+input:focus-visible{
+    outline: none;
+  }
     

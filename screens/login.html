@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../assets/styles/dark-mode.css">
     <link rel="stylesheet" href="../assets/styles/productos.css">
     <link rel="stylesheet" href="../assets/styles/footer.css">
+   <link rel="stylesheet" href="../assets/styles/login/login.css">
 
 
 </head>
@@ -33,7 +34,7 @@
         <div class="header__container">
             <div class="header__logo-busqueda">
                 <div class="logo">
-                    <a href="index.html" class="header__logo__link">
+                    <a href="../index.html" class="header__logo__link">
                         <img src="../assets/svg/Logo_alura_geek.svg" alt="logo Alura Geek" class="header__logo">
                     </a>
                 </div>
@@ -41,14 +42,9 @@
                     <input type="text" class="search__input" placeholder="¿Qué deseas Buscar?">
                     <a href="#" class="icon__search"></a>
                 </div>
-
             </div>
-            <div class="header__btn">
-                <a href="#" class="header__login__link">
-                    <button class="header__loginBtn">Login</button>
 
-                </a>
-            </div>
+            
         </div>
     </header>
     <div class="menu__flotante">
@@ -76,8 +72,17 @@
     </div>
 
     <main>
+        <div class="login__container">
+                <form class="login__form action="" ">
+                    <h1 class="login__titulo">Iniciar Sesión</h1>
+                    <input class="inpuut__email inputs" type="email" name="login-email" required placeholder="Escriba su correo electrónico">
+                    <input class="input__password inputs" type="password" name="password"required placeholder="Escriba su contraseña">
+                    <input class="login__submit" type="submit" value="Entrar"> </form>
+        </div>
+
 
     </main>
+    
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__logolinks">
