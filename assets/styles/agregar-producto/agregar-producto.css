@@ -1,0 +1,51 @@
+/** @format */
+
+.producto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 121vh;
+    align-items: center;
+    background: var(--azul-10, #EAF2FD);
+    
+    
+}
+
+.producto__caja {
+	display: flex;
+	width: 30%;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.6rem;
+    justify-content: center;
+    backdrop-filter: blur(7px); background-color: #EAF2FD; border-radius: 38px; box-shadow: 0px 35px 68px 0px rgba(74, 144, 226, 0.5), inset 0px -3px 16px 0px rgba(74, 144, 226, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+    padding: 2.8rem;
+    min-width: 30rem;
+}
+
+.producto__form{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.input__container{
+    display: flex;
+    padding-top: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0.7rem;
+    align-self: stretch;
+    color: var(--preto-50, #A2A2A2);
+    font-family: Raleway;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6rem; /* 133.333% */
+}
+
+.input__container input{
+    border: none;
+}
