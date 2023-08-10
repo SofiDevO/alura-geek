@@ -1,25 +1,63 @@
-/** @format */
-
 .productos {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+}
+.contennedor{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 6.4rem 0 6.4rem 0;
 }
 
+    
 .productos__flia {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 6.4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6.4rem 0 6.4rem 0;
+    width: 100%;
 }
 
 .productos__barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15.5rem;
+}
+
+.productos__titulo {
+	color: var(--preto-100, #464646);
+	font-family: Raleway;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.productos__verMas {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	width: 100%;
-	padding: 0 1.5rem;
+	gap: 8px;
+}
+
+.productos__verMas h4 {
+	display: flex;
+	color: var(--azul-100, #2a7ae4);
+	font-family: "Raleway", sans-serif;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.productos__verMas .productos__iconoFlecha {
+	background-image: url("../svg/arrow.svg");
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 24px;
 }
 
 .productos__titulo {
@@ -54,68 +92,16 @@
 }
 
 .productos__tarjetas {
-	display: flex;
-	justify-content: space-evenly;
-	width: 100%;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 88%;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 4.6rem 1.3rem;
 }
 
-.productos__flia {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 6.4rem 0;
-}
 
-.productos__barra {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	padding: 0 1.5rem;
-}
-
-.productos__titulo {
-	color: var(--preto-100, #464646);
-	font-family: Raleway;
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-}
-
-.productos__verMas {
-	display: flex;
-	align-items: center;
-	gap: 8px;
-}
-
-.productos__verMas h4 {
-	display: flex;
-	color: var(--azul-100, #2a7ae4);
-	font-family: "Raleway", sans-serif;
-	font-size: 1.6rem;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-}
-.productos__verMas .productos__iconoFlecha {
-	background-image: url("../svg/arrow.svg");
-	background-repeat: no-repeat;
-	width: 24px;
-	height: 24px;
-}
-
-.productos__tarjetas {
-	display: flex;
-	justify-content: space-evenly;
-	width: 100%;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 2rem;
-}
 
 /* Cards de producto */
 .productos__caja {
@@ -302,68 +288,4 @@
 	opacity: 1;
 	transform: translateY(0px) scale(1.2);
 	transition-delay: 0.7s;
-}
-
-/* Hide cards on different screen size */
-@media (max-width: 1500px) {
-	.productos__caja:nth-child(4) {
-		display: none;
-	}
-}
-
-@media (max-width: 1385px) {
-	.productos__caja:nth-child(3) {
-		display: none;
-	}
-}
-@media (max-width: 1105px) {
-	.productos__caja:nth-child(2) {
-		display: none;
-	}
-}
-
-/* MOBILE VIEW */
-
-@media (max-width: 560px) {
-	.productos__caja:nth-child(1) {
-		display: none;
-	}
-
-	.productos__caja .card {
-		width: 26.1rem;
-		height: 35rem;
-	}
-	.productos__caja .card .imgBx {
-		top: 32%;
-		transform: translateY(-48%);
-		width: 90%;
-		height: 76%;
-	}
-	.productos__barra {
-		padding: 0;
-	}
-	.productos__caja .card .imgBx img {
-        top: 52%;
-        left: 62%;
-        transform: translate(-50%, -55%) rotate(16deg);
-        max-width: 19rem;
-		
-	}
-	.productos__caja .card .nemesis img {
-		width: 14rem;
-	}
-	.productos__caja .card:hover .contentBx {
-		height: 163px;
-	}
-
-	.productos__caja .card .contentBx h2 {
-        font-weight: 900;
-        letter-spacing: 0px;
-	}
-	.productos__caja .card .contentBx .size span {
-        width: 60px;
-        text-align: center; 
-        font-size: 20px;
-        margin: 0px 2px;
-	}
 }
