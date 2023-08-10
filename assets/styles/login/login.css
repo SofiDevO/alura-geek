@@ -63,6 +63,11 @@
     flex-shrink: 0;
     background: var(--azul-100, #2A7AE4);
     border: none;
+    color: var(--preto-branco, #FFF);
+
+}
+.login__submit:hover{
+    background-color: rgb(0, 69, 159);
 }
 
 @media screen and (max-width:768px){
