@@ -23,7 +23,7 @@
 
 .productos__barra {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 0 15.5rem;
