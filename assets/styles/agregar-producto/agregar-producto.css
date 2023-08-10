@@ -1,51 +1,104 @@
-
-
-.producto {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    height: 121vh;
-    align-items: center;
-    background: var(--azul-10, #EAF2FD);
-    
-    
+.admin__btn{
+	width: 15.6rem;
+}
+.producto__add {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	height: 121vh;
+	align-items: center;
 }
 
 .producto__caja {
 	display: flex;
-	width: 30%;
+	width: 50%;
 	flex-direction: column;
 	align-items: center;
 	gap: 1.6rem;
-    justify-content: center;
-    backdrop-filter: blur(7px); background-color: #EAF2FD; border-radius: 38px; box-shadow: 0px 35px 68px 0px rgba(74, 144, 226, 0.5), inset 0px -3px 16px 0px rgba(74, 144, 226, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
-    padding: 2.8rem;
-    min-width: 30rem;
+	justify-content: center;
+	backdrop-filter: blur(7px);
+	background-color: #eaf2fd;
+	border-radius: 38px;
+	box-shadow: 0px 35px 68px 0px rgba(74, 144, 226, 0.5),
+		inset 0px -3px 16px 0px rgba(74, 144, 226, 0.6),
+		inset 0px 11px 28px 0px rgb(255, 255, 255);
+	padding: 2.8rem;
+	min-width: 30rem;
+	max-width: 40%;
+}
+.producto__titulo {
+	color: var(--preto-100, #464646);
+	font-family: Raleway;
+	font-size: 3.2rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
 }
 
-.producto__form{
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    width: 100%;
+.producto__form {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	width: 100%;
+	align-items: flex-start;
+	gap: 1.6rem;
 }
 
-.input__container{
-    display: flex;
-    padding-top: 8px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    gap: 0.7rem;
-    align-self: stretch;
-    color: var(--preto-50, #A2A2A2);
-    font-family: Raleway;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.6rem; /* 133.333% */
+.input__container {
+	display: flex;
+	padding: 0.8rem 1.2rem;
+	padding-top: 8px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	align-self: stretch;
+	color: var(--preto-50, #a2a2a2);
+	font-family: Raleway;
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.6rem;
+	border-radius: 0.4rem;
+	background: var(--preto-branco, #fff);
 }
 
-.input__container input{
-    border: none;
+.input__container input {
+	border: none;
+	color: var(--preto-100, #464646);
+	font-family: Raleway;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 2rem;
+}
+
+.producto__descripcion {
+	border: none;
+	resize: none;
+    height: 6rem;
+    color: var(--preto-100, #464646);
+	font-family: Raleway;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 2rem;
+}
+.input__btn {
+	display: flex;
+	padding: 1.6rem;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	align-self: stretch;
+	background: var(--azul-100, #2a7ae4);
+	border: none;
+    color: var(--preto-branco, #FFF);
+font-family: Raleway;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.input__btn:hover{
+    background-color: rgb(88, 42, 228);
 }

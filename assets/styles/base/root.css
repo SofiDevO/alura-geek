@@ -25,6 +25,7 @@ body{
     width: 100%;
     font-family: 'Raleway', sans-serif;
     line-height: 1.5;
+    background: var(--preto-05, #F5F5F5);
 }
     
 a{
@@ -42,5 +43,10 @@ li{
 
 input:focus-visible{
     outline: none;
-  }
-    
+}
+
+
+
+textarea:focus-visible{
+    outline: none;
+}

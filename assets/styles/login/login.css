@@ -5,7 +5,7 @@
 	height: 100vh;
 	align-items: center;
 	justify-content: center;
-	background: var(--preto-05, #f5f5f5);
+	
 }
 
 .login__form {

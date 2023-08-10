@@ -2,8 +2,8 @@
     background-color: var(--dark-gray);
 }
 .dark-mode body{
-        background: rgb(6, 6, 6);
-        color: var(--preto-blanco);
+    background: var(--main-color);
+    color: var(--preto-blanco);
 }
 
 
@@ -76,6 +76,3 @@ color: rgb(255, 255, 255);
     height: 50%;
 }
 
-.dark-mode .login__container{
-    background: var(--main-color);
-}

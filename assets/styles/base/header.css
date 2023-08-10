@@ -1,4 +1,4 @@
-/** @format */
+
 
 .none {
 	display: none;
@@ -60,7 +60,7 @@
 	width: 24px;
 	height: 24px;
 	flex-shrink: 0;
-	background-image: url(../svg/icon-search.svg);
+	background-image: url(../../svg/icon-search.svg);
 }
 
 .header__btn {
