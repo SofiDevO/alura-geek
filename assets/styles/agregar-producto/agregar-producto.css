@@ -1,4 +1,4 @@
-.admin__btn{
+.admin__btn {
 	width: 15.6rem;
 }
 .producto__add {
@@ -11,7 +11,7 @@
 
 .producto__caja {
 	display: flex;
-	width: 50%;
+	width: 66rem;
 	flex-direction: column;
 	align-items: center;
 	gap: 1.6rem;
@@ -23,12 +23,10 @@
 		inset 0px -3px 16px 0px rgba(74, 144, 226, 0.6),
 		inset 0px 11px 28px 0px rgb(255, 255, 255);
 	padding: 2.8rem;
-	min-width: 30rem;
-	max-width: 40%;
 }
 .producto__titulo {
 	color: var(--preto-100, #464646);
-	font-family: Raleway;
+	font-family: "Raleway", sans-serif;
 	font-size: 3.2rem;
 	font-style: normal;
 	font-weight: 700;
@@ -53,7 +51,7 @@
 	align-items: stretch;
 	align-self: stretch;
 	color: var(--preto-50, #a2a2a2);
-	font-family: Raleway;
+	font-family: "Raleway", sans-serif;
 	font-size: 1.2rem;
 	font-style: normal;
 	font-weight: 400;
@@ -75,9 +73,9 @@
 .producto__descripcion {
 	border: none;
 	resize: none;
-    height: 6rem;
-    color: var(--preto-100, #464646);
-	font-family: Raleway;
+	height: 6rem;
+	color: var(--preto-100, #464646);
+	font-family: "Raleway", sans-serif;
 	font-size: 1.6rem;
 	font-style: normal;
 	font-weight: 400;
@@ -92,13 +90,24 @@
 	align-self: stretch;
 	background: var(--azul-100, #2a7ae4);
 	border: none;
-    color: var(--preto-branco, #FFF);
-font-family: Raleway;
-font-size: 1.6rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+	color: var(--preto-branco, #fff);
+	font-family: "Raleway", sans-serif;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
-.input__btn:hover{
-    background-color: rgb(0, 69, 159);
+.input__btn:hover {
+	background-color: rgb(0, 69, 159);
+}
+
+@media screen and (max-width: 768px) {
+	.producto__titulo {
+		font-size: 2.2rem;
+	}
+	.producto__add {
+		height: 88vh;
+		align-items: flex-end;
+		margin-bottom: 8rem;
+	}
 }
