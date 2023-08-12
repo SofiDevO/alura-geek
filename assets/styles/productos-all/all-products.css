@@ -60,37 +60,6 @@
 	height: 24px;
 }
 
-.productos__titulo {
-	color: var(--preto-100, #464646);
-	font-family: Raleway;
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-}
-
-.productos__verMas {
-	display: flex;
-	align-items: center;
-	gap: 8px;
-}
-
-.productos__verMas h4 {
-	display: flex;
-	color: var(--azul-100, #2a7ae4);
-	font-family: "Raleway", sans-serif;
-	font-size: 1.6rem;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-}
-.productos__verMas .productos__iconoFlecha {
-	background-image: url("../svg/arrow.svg");
-	background-repeat: no-repeat;
-	width: 24px;
-	height: 24px;
-}
-
 .productos__tarjetas {
     display: flex;
     justify-content: space-evenly;
