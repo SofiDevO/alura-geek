@@ -1,0 +1,14 @@
+.detalle{
+    display: flex;
+    width: 100%;
+    height:100vh;
+}
+.detalle__container{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.detalle__img{
+    width: 50%;
+}
+    
