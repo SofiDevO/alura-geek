@@ -74,28 +74,28 @@
     <main>
         <section class="producto__add">
             <div class="producto__caja">
-                <form class="producto__form" action="" method="post">
+                <form class="producto__form" action="" method="post" data-form>
                     <h1 class="producto__titulo">Agregar nuevo producto</h1>
                     <div class="input__container ">
                         <label for="">Url de imagen</label>
                         <input class="producto__imagen" type="url" src="" placeholder="https://example.com/my-img.png"
-                            pattern="https://.*" size="30" required>
+                            pattern="https://.*" size="30" required data-url>
                     </div>
                     <div class="input__container">
                         <label for="">Categoría</label>
-                        <input class="producto__categoria" type="text" name="producto" required placeholder="cosolas">
+                        <input class="producto__categoria" type="text" name="producto" required placeholder="consolas" data-category>
                     </div>
                     <div class="input__container">
                         <label for="">Nombre del producto</label>
-                        <input class="producto__nombre" type="text" name="">
+                        <input class="producto__nombre" type="text" name="nombre" data-name>
                     </div>
                     <div class="input__container">
                         <label for="precio">Precio del producto</label>
-                        <input class="producto__precio" type="text" required placeholder="$200.00">
+                        <input class="producto__precio" type="text" required placeholder="$200.00" data-price>
                     </div>
                     <div class="input__container">
                         <label for="">Descripción del producto</label>
-                        <textarea class="producto__descripcion" name="description" cols="30" rows="10"></textarea>
+                        <textarea class="producto__descripcion" name="description" cols="30" rows="10" data-description></textarea>
                     </div>
                     <input class="input__btn" type="submit" value="Agregar producto">
                 </form>
@@ -159,7 +159,8 @@
             <p>©SofiDev</p>
         </div>
     </section>
-    <script type="module" src="../client-services/modules.js"></script>
+    <script type="module" src="../services/modules.js"></script>
+    <script type="module" src="../assets/controllers/products-controllers.js"></script>
 </body>
 
 </html>
