@@ -38,7 +38,8 @@ const consolas = () =>
 const diversos = () =>
 	fetch("http://127.0.0.1:5555/product?category=diversos").then((response) =>
 		response.json()
-	);
+    );
+
 
 
 
@@ -53,7 +54,8 @@ starwars().then((data) => {
 		);
 		seccionStarwars.appendChild(nuevoProducto);
 	});
-});
+}).catch((err)=> alert('ocurrió un error'));
+
 consolas().then((data) => {
 	data.forEach((product) => {
 		const nuevoProducto = crearNuevoProducto(
@@ -64,7 +66,8 @@ consolas().then((data) => {
 		);
 		seccioncConsolas.appendChild(nuevoProducto);
 	});
-});
+}).catch((err)=> alert('ocurrió un error'));
+
 diversos().then((data) => {
 	data.forEach((product) => {
 		const nuevoProducto = crearNuevoProducto(
@@ -75,4 +78,7 @@ diversos().then((data) => {
 		);
 		seccionDiversos.appendChild(nuevoProducto);
 	});
-});
+})
+.catch((err)=> alert('ocurrió un error'));
+
+
