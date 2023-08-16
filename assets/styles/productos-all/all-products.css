@@ -152,29 +152,13 @@
 
 .productos__caja .card .imgBx img {
 	position: absolute;
-	top: 51%;
-	left: 58%;
-	transform: translate(-50%, -50%) rotate(20deg);
-	width: 29.7rem;
-}
-.productos__caja .card .vader img {
-	width: 26rem;
-}
-.productos__caja .card .grogu img {
-	width: 20rem;
-}
-.productos__caja .card .nemesis img {
-	width: 18rem;
+    top: 49%;
+    left: 60%;
+    transform: translate(-49%, -52%) rotate(19deg);
+    max-width: 91%;
+    min-width: 10rem;
 }
 
-.productos__caja .card .vader2 img {
-	width: 23rem;
-	transform: translate(-50%, -50%) rotate(5deg);
-}
-.productos__caja .card .spidy img {
-	width: 12rem;
-	transform: translate(-50%, -50%) rotate(5deg);
-}
 .productos__caja .card .contentBx {
 	position: absolute;
 	bottom: 0;

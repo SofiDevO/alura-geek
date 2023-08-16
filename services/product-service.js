@@ -1,40 +1,78 @@
 const d = document;
 
-const crearNuevoProducto = (img, name, price)=>{
-    const producto = d.createElement("div")
-    producto.classList.add('productos__caja')
-    const contenido = `
+const crearNuevoProducto = (img, name, price, Description, category, id) => {
+	const producto = d.createElement("div");
+	producto.classList.add("productos__caja");
+	const contenido = `
     <div class="card">
-        <div class="imgBx">
-            <img src="${img}"
-                alt="starwars taza">
+    <div class="imgBx">
+        <img src="${img}"
+            alt="starwars taza">
+    </div>
+    <div class="contentBx">
+        <h2>${name}</h2>
+        <div class="size">
+            <h3>Precio</h3>
+            <span>${price}</span>
         </div>
-        <div class="contentBx">
-            <h2>${name}</h2>
-            <div class="size">
-                <h3>Precio:</h3>
-                <span>${price}</span>
-            </div>
-            <a href="../screens/producto.html">Ver producto</a>
-            `;
-       
-              
-        
-        producto.innerHTML = contenido;
-        return producto;
-    };
+        <a href="../screens/producto.html">Ver producto</a>
+    `;
+	producto.innerHTML = contenido;
+	return producto;
+};
 
-    const seccionProducto = d.querySelector("[data-section]");
-    
-    const http = new XMLHttpRequest();
-    http.open('GET', "http://localhost:5555/starwars");
-    http.send();
+const seccionStarwars = d.querySelector('[data-section="starwars"]');
+const seccioncConsolas = d.querySelector('[data-section="consolas"]');
+const seccionDiversos = d.querySelector('[data-section="diversos"]');
 
-    http.onload = ()=>{
-        const data = JSON.parse(http.response);
-        console.log(data)
-        data.forEach(( product) => {
-            const nuevoProducto = crearNuevoProducto(product.img, product.name, product.price);
-            seccionProducto.appendChild(nuevoProducto);
-        });
-    };
+
+
+const starwars = () =>
+	fetch("http://127.0.0.1:5555/product?category=starwars").then((response) =>
+		response.json()
+	);
+const consolas = () =>
+	fetch("http://127.0.0.1:5555/product?category=consolas").then((response) =>
+		response.json()
+	);
+const diversos = () =>
+	fetch("http://127.0.0.1:5555/product?category=diversos").then((response) =>
+		response.json()
+	);
+
+
+
+starwars().then((data) => {
+	data.forEach((product) => {
+		const nuevoProducto = crearNuevoProducto(
+			product.img,
+			product.name,
+			product.price,
+			product.id,
+			product.category
+		);
+		seccionStarwars.appendChild(nuevoProducto);
+	});
+});
+consolas().then((data) => {
+	data.forEach((product) => {
+		const nuevoProducto = crearNuevoProducto(
+			product.img,
+			product.name,
+			product.price,
+			product.id
+		);
+		seccioncConsolas.appendChild(nuevoProducto);
+	});
+});
+diversos().then((data) => {
+	data.forEach((product) => {
+		const nuevoProducto = crearNuevoProducto(
+			product.img,
+			product.name,
+			product.price,
+			product.id
+		);
+		seccionDiversos.appendChild(nuevoProducto);
+	});
+});

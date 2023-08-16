@@ -1,57 +1,125 @@
 {
-  "starwars": [
-    {
-      "img": "https://www.claroshop.com/c/star-wars-day/img/categorias/TAZAS_CATEGORIAS_STAR_WARS.png",
-      "name": "Trooper taza",
-      "price": "$60.00",
-      "Description": "Taza casco Trooper",
-      "id": 1
-    },
-    {
-      "img": "https://cdn1.coppel.com/images/catalog/mkp/1773/5000/17733590-1.jpg",
-      "name": "Funko Vader",
-      "price": "$60.00",
-      "Description": "Funko coleccionable Darth vader",
-      "id": 2
-    },
-    {
-      "img": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA12N6pr.img?w=500&h=500&m=6",
-      "name": "Grogu (Baby Yoda)",
-      "price": "$100.00",
-      "Description": "Grogu peluche electrónico",
-      "id": 3
-    },
-    {
-      "img": "https://cdn.shopify.com/s/files/1/0563/9831/5692/files/luke-skywalker-lightsaber-hilt.png?v=1656863305",
-      "name": "Lightsaber",
-      "price": "$3000.00",
-      "Description": "Sable de luz para duelos",
-      "id": 4
-    },
-    {
-      "img": "https://tooys.mx/media/wysiwyg/Darth_Vader-estatua-premium-format-por-sideshow-19.png",
-      "name": "Darth Vader",
-      "price": "$450.00",
-      "Description": "DarDarth  Vader figura de coleción",
-      "id": 5
-    }
-  ],
-  "consolas": [
-    {
-      "img": "https://www.cibermoda.mx/assets/images/craft_images/productos/Consola-Retro-Portatil-X12-Plus-pantalla-7-pulgadas-color-rojo-azul-joystick.webp",
-      "name": "X12 Plus",
-      "price": "$4500.00",
-      "Description": "consola portatil, 16 Gb de RAM",
-      "id": 1
-    }
-  ],
-  "Diversos": [
-    {
-      "img": "https://www.claroshop.com/c/star-wars-day/img/categorias/TAZAS_CATEGORIAS_STAR_WARS.png",
-      "name": "Spiderman Miles",
-      "price": "$60.00",
-      "Description": "Taza casco Trooper",
-      "id": 1
-    }
-  ]
+  
+    "product": [
+      {
+        "img": "https://www.claroshop.com/c/star-wars-day/img/categorias/TAZAS_CATEGORIAS_STAR_WARS.png",
+        "name": "Trooper taza",
+        "price": "$60.00",
+        "Description": "Taza casco Trooper",
+        "category": "starwars",
+        "id": 1
+      },
+      {
+        "img": "https://cdn1.coppel.com/images/catalog/mkp/1773/5000/17733590-1.jpg",
+        "name": "Funko Vader",
+        "price": "$60.00",
+        "Description": "Funko coleccionable Darth vader",
+        "category": "starwars",
+        "id": 2
+      },
+      {
+        "img": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA12N6pr.img?w=500&h=500&m=6",
+        "name": "Grogu (Baby Yoda)",
+        "price": "$100.00",
+        "Description": "Grogu peluche electrónico",
+        "category": "starwars",
+        "id": 3
+      },
+      {
+        "img": "https://cdn.shopify.com/s/files/1/0563/9831/5692/files/luke-skywalker-lightsaber-hilt.png?v=1656863305",
+        "name": "Lightsaber",
+        "price": "$3000.00",
+        "Description": "Sable de luz para duelos",
+        "category": "starwars",
+        "id": 4
+      },
+      {
+        "img": "https://tooys.mx/media/wysiwyg/Darth_Vader-estatua-premium-format-por-sideshow-19.png",
+        "name": "Darth Vader",
+        "price": "$450.00",
+        "Description": "DarDarth  Vader figura de coleción",
+        "category": "starwars",
+        "id": 5
+      },
+      {
+        "img": "https://www.cibermoda.mx/assets/images/craft_images/productos/Consola-Retro-Portatil-X12-Plus-pantalla-7-pulgadas-color-rojo-azul-joystick.webp",
+        "name": "X12 Plus",
+        "price": "$4500.00",
+        "Description": "consola portatil, 16 Gb de RAM",
+        "category": "consolas",
+        "id": 1
+      },
+      {
+        "img": "https://www.cibermoda.mx/assets/images/craft_images/productos/Consola-Retro-Portatil-X12-Plus-pantalla-7-pulgadas-color-rojo-azul-joystick.webp",
+        "name": "X12 Plus",
+        "price": "$4500.00",
+        "Description": "consola portatil, 16 Gb de RAM",
+        "category": "consolas",
+        "id": 1
+      },
+      {
+        "img": "https://www.cibermoda.mx/assets/images/craft_images/productos/Consola-Retro-Portatil-X12-Plus-pantalla-7-pulgadas-color-rojo-azul-joystick.webp",
+        "name": "X12 Plus",
+        "price": "$4500.00",
+        "Description": "consola portatil, 16 Gb de RAM",
+        "category": "consolas",
+        "id": 1
+      },
+      {
+        "img": "https://www.techpowerup.com/review/scuf-impact-controller-ps4-pc/images/small.png",
+        "name": "Control usb",
+        "price": "$500.00",
+        "Description": "Control de china",
+        "category": "consolas",
+        "id": 1
+      },
+      {
+        "img": "https://www.cibermoda.mx/assets/images/craft_images/productos/Consola-Retro-Portatil-X12-Plus-pantalla-7-pulgadas-color-rojo-azul-joystick.webp",
+        "name": "X12 Plus",
+        "price": "$4500.00",
+        "Description": "consola portatil, 16 Gb de RAM",
+        "category": "consolas",
+        "id": 1
+      },
+      {
+        "img": "https://www.claroshop.com/c/star-wars-day/img/categorias/TAZAS_CATEGORIAS_STAR_WARS.png",
+        "name": "Spiderman Miles",
+        "price": "$60.00",
+        "Description": "Taza casco Trooper",
+        "category": "diversos",
+        "id": 2
+      },
+      {
+        "img": "https://www.claroshop.com/c/star-wars-day/img/categorias/TAZAS_CATEGORIAS_STAR_WARS.png",
+        "name": "Spiderman Miles",
+        "price": "$60.00",
+        "Description": "Taza casco Trooper",
+        "category": "diversos",
+        "id": 2
+      },
+      {
+        "img": "https://www.claroshop.com/c/star-wars-day/img/categorias/TAZAS_CATEGORIAS_STAR_WARS.png",
+        "name": "Spiderman Miles",
+        "price": "$60.00",
+        "Description": "Taza casco Trooper",
+        "category": "diversos",
+        "id": 2
+      },
+      {
+        "img": "https://www.claroshop.com/c/star-wars-day/img/categorias/TAZAS_CATEGORIAS_STAR_WARS.png",
+        "name": "Spiderman Miles",
+        "price": "$60.00",
+        "Description": "Taza casco Trooper",
+        "category": "diversos",
+        "id": 2
+      },
+      {
+        "img": "https://www.claroshop.com/c/star-wars-day/img/categorias/TAZAS_CATEGORIAS_STAR_WARS.png",
+        "name": "Spiderman Miles",
+        "price": "$60.00",
+        "Description": "Taza casco Trooper",
+        "category": "diversos",
+        "id": 2
+      }
+    ]
 }
