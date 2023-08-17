@@ -28,15 +28,15 @@ const seccionDiversos = d.querySelector('[data-section="diversos"]');
 
 
 const starwars = () =>
-	fetch("https://alurageek-api.vercel.app/product?category=starwars").then((response) =>
+	fetch("https://fake-api-five.vercel.app/product?category=starwars").then((response) =>
 		response.json()
 	);
 const consolas = () =>
-	fetch("https://alurageek-api.vercel.app/product?category=consolas").then((response) =>
+	fetch("https://fake-api-five.vercel.app/product?category=consolas").then((response) =>
 		response.json()
 	);
 const diversos = () =>
-	fetch("https://alurageek-api.vercel.app/product?category=diversos").then((response) =>
+	fetch("https://fake-api-five.vercel.app/product?category=diversos").then((response) =>
 		response.json()
     );
 

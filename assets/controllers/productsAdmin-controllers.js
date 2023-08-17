@@ -31,7 +31,7 @@ const crearNuevoProducto = (img, name, price, Description, category, id) => {
 const seccionAll = document.querySelector('[data-productos]');
 
 const allProducts = () =>
-	fetch("https://alurageek-api.vercel.app/product").then((response) =>
+	fetch("https://fake-api-five.vercel.app/product").then((response) =>
 		response.json()
     );
     
