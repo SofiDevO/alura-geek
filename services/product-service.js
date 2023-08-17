@@ -15,7 +15,7 @@ const crearNuevoProducto = (img, name, price, Description, category, id) => {
             <h3>Precio</h3>
             <span>${price}</span>
         </div>
-        <a href=".././screens/producto.html">Ver producto</a>
+        <a href="./screens/producto.html">Ver producto</a>
     `;
 	producto.innerHTML = contenido;
 	return producto;
