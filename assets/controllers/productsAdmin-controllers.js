@@ -31,10 +31,10 @@ const crearNuevoProducto = (img, name, price, Description, category, id) => {
 const seccionAll = document.querySelector('[data-productos]');
 
 const allProducts = () =>
-	fetch("http://127.0.0.1:5555/product").then((response) =>
+	fetch("https://alurageek-api.vercel.app/product").then((response) =>
 		response.json()
     );
-
+    
 allProducts().then((data) => {
 	data.forEach((product) => {
 		const nuevoProducto = crearNuevoProducto(
