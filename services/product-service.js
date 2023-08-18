@@ -7,7 +7,7 @@ const crearNuevoProducto = (img, name, price, Description, category, id) => {
     <div class="card">
     <div class="imgBx">
         <img src="${img}"
-            alt="">
+            alt="imagen porducto">
     </div>
     <div class="contentBx">
         <h2>${name}</h2>
