@@ -103,9 +103,9 @@
 	backdrop-filter: blur(5px);
 	background-color: rgba(255, 255, 255, 1);
 	border-radius: 26px;
-	box-shadow: 35px 35px 68px 0px rgba(71, 138, 231, 0.5),
-		inset -8px -8px 16px 0px rgba(71, 138, 231, 0.6),
-		inset 0px 11px 28px 0px rgb(255, 255, 255);
+	box-shadow: -39px 4px 36px -19px rgba(71, 138, 231, 0.5), 
+		inset -8px 5px 54px -8px rgba(71, 138, 231, 0.6),
+		inset 0px 11px 5px 0px rgb(255, 255, 255);
 	overflow: hidden;
 }
 
@@ -152,21 +152,24 @@
 
 .productos__caja .card .imgBx img {
 	position: absolute;
-    top: 49%;
+    top: 58%;
     left: 60%;
-    transform: translate(-49%, -52%) rotate(19deg);
-    max-width: 91%;
-    min-width: 10rem;
+    transform: translate(-50%, -68%) rotate(19deg);
+    width: 35rem;
+    min-width: 20rem;
+    max-width: 85%;
+	filter: drop-shadow(-14px 1px 6px #000);
 }
 
 .productos__caja .card .contentBx {
 	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 120px;
-	text-align: center;
-	transition: 1s;
-	z-index: 90;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    transition: 1s;
+    z-index: 90;
+    
 }
 
 .productos__caja .card:hover .contentBx {
@@ -180,7 +183,7 @@
 	color: rgb(0, 0, 0);
 }
 
-.productos__caja .card:hover .contentBx .size {
+.productos__caja .card:hover .contentBx .price {
 	opacity: 1;
 	visibility: visible;
 	transition-delay: 0.5s;
@@ -192,7 +195,7 @@
 	transition-delay: 0.6s;
 }
 
-.productos__caja .card .contentBx .size h3,
+.productos__caja .card .contentBx .price h3,
 .productos__caja .card .contentBx .color h3 {
 	color: rgb(0, 0, 0);
 	font-weight: 800;
@@ -202,7 +205,7 @@
 	margin: 0;
 }
 
-.productos__caja .card .contentBx .size span {
+.productos__caja .card .contentBx .price span {
 	width: 61px;
 	text-align: center;
 	font-size: 18px;
@@ -212,36 +215,33 @@
 	color: #000000;
 	cursor: pointer;
 }
-
-.productos__caja .card .contentBx .color span {
-	width: 20px;
-	height: 20px;
-	background: #ff0;
-	border-radius: 50%;
-	margin: 0 5px;
-	cursor: pointer;
-}
-
-.productos__caja .card .contentBx .color span:nth-child(2) {
-	background: #1bbfe9;
-}
-
-.productos__caja .card .contentBx .color span:nth-child(3) {
-	background: #1b2fe9;
-}
-
-.productos__caja .card .contentBx .color span:nth-child(4) {
-	background: #080481;
-}
-
 .editar__container{
-	display: flex;
+	gap: 3.4rem;
+    display: inline-flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 1rem 2rem;
+	margin-top: 2rem;
+
 }
 
-.editar__container a {
+
+
+
+.productos__caja .card .contentBx a {
+	display: inline-block;
+	padding: 10px 20px;
+	backdrop-filter: blur(5px);
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 38px;
+	box-shadow: 35px 35px 68px 0px rgba(215, 215, 215, 0.5), inset -8px -8px 16px 0px rgba(215, 215, 215, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+	margin-top: 10px;
+	text-decoration: none;
+	font-weight: 800;
+	color: #111;
+	opacity: 0;
+	transform: translateY(40px);
+	transition: 0.5s;
+}
+.productos__caja .card .contentBx .editaricono a {
 	display: inline-block;
 	padding: 10px 20px;
 	backdrop-filter: blur(5px);
@@ -255,15 +255,29 @@
 	font-weight: 800;
 	color: #111;
 	opacity: 0;
-	transform: translateY(40px);
+	transform: translateY(35px);
 	transition: 0.5s;
 }
 
-.editar__container i{
-	font-size: 1.6rem;
-}
-
 .productos__caja .card:hover .contentBx a {
+	opacity: 1;
+	transform: translateY(0px) scale(1.2);
+	transition-delay: 0.7s;
+}
+.productos__caja .card .contentBx  .eliminar__icono{
+	backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 44px;
+    box-shadow: 35px 35px 68px 0px rgba(215, 215, 215, 0.5), inset -8px -8px 16px 0px rgba(215, 215, 215, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    color: #111;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.productos__caja .card:hover .contentBx .eliminar__icono {
 	opacity: 1;
 	transform: translateY(0px) scale(1.2);
 	transition-delay: 0.7s;

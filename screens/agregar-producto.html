@@ -74,12 +74,12 @@
     <main>
         <section class="producto__add">
             <div class="producto__caja">
-                <form class="producto__form" action="" method="post" data-form>
+                <form class="producto__form"  data-form>
                     <h1 class="producto__titulo">Agregar nuevo producto</h1>
                     <div class="input__container ">
                         <label for="">Url de imagen</label>
-                        <input class="producto__imagen" type="url" src="" placeholder="https://example.com/my-img.png"
-                            pattern="https://.*" size="30" required data-url>
+                        <input class="producto__imagen" type="text" src="" placeholder="https://example.com/my-img.png"
+                            size="30" required data-url>
                     </div>
                     <div class="input__container">
                         <label for="">Categoría</label>
@@ -159,7 +159,8 @@
             <p>©SofiDev</p>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="../services/modules.js"></script>
+    <script type="module" src="../assets/controllers/addnew.controller.js"></script>
 </body>
-
 </html>

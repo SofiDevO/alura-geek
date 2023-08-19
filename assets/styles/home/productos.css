@@ -16,10 +16,10 @@
 
 .productos__barra {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	padding: 0 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    padding: 0 1.5rem;
 }
 
 .productos__titulo {
@@ -55,11 +55,14 @@
 
 .productos__tarjetas {
 	display: flex;
-	justify-content: space-evenly;
-	width: 100%;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 97vw;
+    max-height: 534px;
+    overflow: hidden;
+    gap: 9rem;
+    padding: 3.5rem;
 }
 
 
@@ -71,19 +74,22 @@
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 8px;
+	
 }
+
+
 
 .productos__caja .card {
 	position: relative;
-	width: 26.1rem;
-	height: 43rem;
-	backdrop-filter: blur(5px);
-	background-color: rgba(255, 255, 255, 1);
-	border-radius: 26px;
-	box-shadow: 35px 35px 68px 0px rgba(71, 138, 231, 0.5),
-		inset -8px -8px 16px 0px rgba(71, 138, 231, 0.6),
-		inset 0px 11px 28px 0px rgb(255, 255, 255);
-	overflow: hidden;
+    width: 26.1rem;
+    height: 43rem;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 26px;
+    box-shadow: -39px 4px 36px -19px rgba(71, 138, 231, 0.5), 
+	inset -8px 5px 54px -8px rgba(71, 138, 231, 0.6),
+	inset 0px 11px 5px 0px rgb(255, 255, 255);
+    overflow: hidden;
 }
 
 .productos__caja .card:before {
@@ -129,12 +135,13 @@
 
 .productos__caja .card .imgBx img {
 	position: absolute;
-    top: 49%;
+    top: 58%;
     left: 60%;
-    transform: translate(-49%, -52%) rotate(19deg);
+    transform: translate(-50%, -68%) rotate(19deg);
     width: 35rem;
-    min-width: 21rem;
-    max-width: 90%;
+    min-width: 20rem;
+    max-width: 85%;
+	filter: drop-shadow(-14px 1px 6px #000);
 }
 
 .productos__caja .card .contentBx {
@@ -145,8 +152,8 @@
     text-align: center;
     transition: 1s;
     z-index: 90;
-    background-color: #3db6eaed;
 }
+    
 
 .productos__caja .card:hover .contentBx {
 	height: 210px;
@@ -192,26 +199,9 @@
 	cursor: pointer;
 }
 
-.productos__caja .card .contentBx .color span {
-	width: 20px;
-	height: 20px;
-	background: #ff0;
-	border-radius: 50%;
-	margin: 0 5px;
-	cursor: pointer;
-}
 
-.productos__caja .card .contentBx .color span:nth-child(2) {
-	background: #1bbfe9;
-}
 
-.productos__caja .card .contentBx .color span:nth-child(3) {
-	background: #1b2fe9;
-}
 
-.productos__caja .card .contentBx .color span:nth-child(4) {
-	background: #080481;
-}
 
 .productos__caja .card .contentBx a {
 	display: inline-block;
@@ -237,34 +227,25 @@
 	transition-delay: 0.7s;
 }
 
-/* Hide cards on different screen size */
-@media (max-width: 1500px) {
-	.productos__caja:nth-child(4) {
-		display: none;
-	}
-}
 
-@media (max-width: 1385px) {
-	.productos__caja:nth-child(3) {
-		display: none;
-	}
-}
-@media (max-width: 1105px) {
-	.productos__caja:nth-child(2) {
-		display: none;
-	}
-}
 
 /* MOBILE VIEW */
 
 @media (max-width: 560px) {
-	.productos__caja:nth-child(1) {
-		display: none;
+
+	.productos__flia{
+		padding: 0;
+	}
+	.productos__tarjetas{
+		width: 101vw;
+		display: flex;
+		justify-content: center;
+		gap: 25rem;
 	}
 
 	.productos__caja .card {
 		width: 26.1rem;
-		height: 35rem;
+		height: 38rem;
 	}
 	.productos__caja .card .imgBx {
 		top: 32%;
@@ -274,6 +255,7 @@
 	}
 	.productos__barra {
 		padding: 0;
+		width: 90%;
 	}
 	.productos__caja .card .imgBx img {
         top: 52%;

@@ -21,12 +21,12 @@
 
 .header__container {
 	display: flex;
-	min-width: 60%;
-	width: 93%;
-	padding: 32px 0px;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+    min-width: 60%;
+    width: 93%;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .header__logo-busqueda {

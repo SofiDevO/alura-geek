@@ -1,0 +1,219 @@
+.hero{
+    display: flex;
+    height: 94.2rem;
+    padding: 49px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+
+    
+
+.hero__container{
+    display: flex;
+    width: 90%;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.hero__container h1{
+    color: var(--preto-branco, #FFF);
+    font-family: Raleway;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.hero__container h2{
+    color: var(--preto-branco, #FFF);
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero__boton{
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--azul-100, #2A7AE4);
+    color: var(--preto-blanco);
+    border: none;    
+}
+
+
+.banner_span1 {
+    background:linear-gradient(58deg, rgba(0, 0, 0, 0.781) 10%, rgba(0, 0, 0, 0.792) 17%, rgba(0, 0, 0, 0.542) 60%), 
+url("https://a-static.besthdwallpaper.com/fading-stormtrooper-wallpaper-2560x960-17599_87.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner_span2 {
+    background: linear-gradient(58deg, rgba(0, 0, 0, 0.806) 10%, rgba(0, 0, 0, 0.792) 17%, rgba(0, 0, 0, 0.436) 50%), 
+        url("../../img/banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner_span3 {
+    background:linear-gradient(58deg, rgba(0, 0, 0, 0.814) 10%, rgba(0, 0, 0, 0.792) 17%, rgba(0, 0, 0, 0.421) 60%), 
+    url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ec90fb4-9918-420b-bcbd-a03d3bc35781/de9vssx-7fbe2277-d875-4ee3-9503-cb49c4d6d7f4.png/v1/fill/w_1549,h_516,q_70,strp/pokemon_pikachu_banner_by_zicouxd_de9vssx-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiJcL2ZcLzJlYzkwZmI0LTk5MTgtNDIwYi1iY2JkLWEwM2QzYmMzNTc4MVwvZGU5dnNzeC03ZmJlMjI3Ny1kODc1LTRlZTMtOTUwMy1jYjQ5YzRkNmQ3ZjQucG5nIiwid2lkdGgiOiI8PTMwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.EEg1bHdYXf_b4J7gCcsBJg4AD1bgK45HtKPymah-Mwg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner_span4 {
+    background:linear-gradient(58deg, rgba(0, 0, 0, 0.781) 10%, rgba(0, 0, 0, 0.792) 17%, rgba(0, 0, 0, 0.514) 60%), 
+     url("https://i0.wp.com/news.xbox.com/en-us/wp-content/uploads/sites/2/2023/05/ROG-Ally-Hero-Mockup-3fdfbfd07fec1fd901fa.jpg?fit=1920%2C1080&ssl=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner__nav-content {
+    width: calc(200px + 2.4em);
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 1.2em;
+    position: absolute;
+    margin-top: 2rem;
+    right: 1em
+}
+
+    
+
+.banner_nav {
+    background: #FFFFFF;
+    height: 5px;
+    width: 60px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .3s ease-in-out
+}
+
+.banner_nav--select {
+    background: var(--azul-100);
+}
+
+
+
+
+@media screen and (max-width:1024px){
+    .hero{
+        display: flex;
+        height: 453px;
+        padding: 32px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 16px;
+    }
+    .hero__container h1{
+        font-size: 52px;
+        line-height: normal;
+    }
+    .hero__container h2{
+        font-size: 22px;
+    }
+    .hero__btn__link{
+        padding: 12px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .banner__ofertas{
+        font-size: 1.2rem; 
+        }  
+    .banner__nav-content {
+        width: calc(200px + 2.4em);
+        /* right: 50%; */
+        /* left: 50%; */
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 1.2em;
+        position: absolute;
+        bottom: 42em;
+        right: 25em;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .hero{
+        display: flex;
+        height: 59rem;
+        gap: unset;
+      }
+      .hero__container{
+        justify-content: flex-end;
+        align-self: stretch;
+      }
+      .hero__container h1{
+        font-size: 2.2rem;
+        margin: 3px 0;
+      }
+      .hero__container h2{
+        font-size: 1.4rem;
+      }
+      .hero__boton{
+        padding: 1.2rem 1.6rem;
+        gap: 1rem;
+      }
+      .banner__nav-content {
+        width: calc(140px + 2.4em);
+        transform: none;
+        left: auto;
+        top: 92%;
+    }
+
+    .banner_nav {
+        height: 3px;
+        width: 35px;
+    }
+    .banner_span1, .banner_span2, .banner_span3, .banner_span4{
+        background-size:cover;
+        background-position:  bottom center;
+    }
+    .banner__nav-content {
+        /* display: none; */
+        width: calc(140px + 2.4em);
+        transform: none;
+        left: auto;
+        top: 55rem;
+        right: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

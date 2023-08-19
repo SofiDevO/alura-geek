@@ -19,10 +19,10 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/base/root.css">
     <link rel="stylesheet" href="./assets/styles/base/header.css">
-    <link rel="stylesheet" href="./assets/styles/home/hero.css">
     <link rel="stylesheet" href="./assets/styles/base/dark-mode.css">
     <link rel="stylesheet" href="./assets/styles/home/productos.css">
     <link rel="stylesheet" href="./assets/styles/base/footer.css">
+    <link rel="stylesheet" href="./assets/styles/home/banner-slider.css">
 </head>
 
 <body>
@@ -73,15 +73,27 @@
     </div>
 
     <main>
-        <section class="hero">
-            <div class="hero__container">
-                <h1>Febrero Promocional</h1>
-                <h2>Productos selecionados con 33% de descuento</h2>
-                <a href="#consolas  " class="hero__btn__link">
-                    <button class="hero__boton">Ver consolas</button>
-                </a>
-            </div>
+      
+
+         <!-- zona banner slider-->
+
+    <section class="  banner_span1 hero">
+        <div class="hero__container banner__contenido contenedor">
+            <h1>Febrero Promocional</h1>
+            <h2>Productos selecionados con 33% de descuento</h2>
+          <a href="#consolas" class="hero__btn__link">
+            <button class="hero__boton">Ver consolas</button>
+        </a>
+        </div>
+        <nav class="banner__nav-content">
+            <span id="span1 "  class="banner_nav banner_nav--select"></span>
+            <span id="span2" class="banner_nav"></span>
+            <span  id="span3"class="banner_nav"></span>
+            <span  id="span4"class="banner_nav"></span>
+        </nav>
         </section>
+
+
         <section class="productos">
 
             <!-- star wars -->
@@ -192,7 +204,7 @@
         </div>
     </section>
     <script type="module" src="./services/modules.js"></script>
-    <script type="module" src="./services/product-service.js"></script>
+    <script type="module" src="./assets/controllers/product.controller.js"></script>
 </body>
 
 </html>
