@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar producto </title>
+    <title>Exito</title>
     <link rel="shortcut icon" href="../assets/svg/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -22,7 +22,11 @@
     <link rel="stylesheet" href="../assets/styles/base/header.css">
     <link rel="stylesheet" href="../assets/styles/base/dark-mode.css">
     <link rel="stylesheet" href="../assets/styles/base/footer.css">
-    <link rel="stylesheet" href="../assets/styles/agregar-producto/agregar-producto.css">
+    <link rel="stylesheet" href="../assets/styles/base/exito.css">
+
+
+
+
 </head>
 
 <body>
@@ -38,13 +42,8 @@
                     <input type="text" class="search__input" placeholder="¿Qué deseas Buscar?">
                     <a href="#" class="icon__search"></a>
                 </div>
+            </div>
 
-            </div>
-            <div class="header__btn">
-                <a href="./admin.html" class="header__login__link">
-                    <button class="header__loginBtn admin__btn">Menú Administrador</button>
-                </a>
-            </div>
 
         </div>
     </header>
@@ -72,39 +71,19 @@
         </div>
     </div>
     <main>
-        <section class="producto__add">
-            <div class="producto__caja">
-                <form class="producto__form"  data-form>
-                    <h1 class="producto__titulo">Agregar nuevo producto</h1>
-                    <div class="input__container ">
-                        <label for="">Url de imagen</label>
-                        <input class="producto__imagen" type="text" placeholder="https://example.com/my-img.png"  required data-url>
-                    </div>
-                    <div class="input__container">
-                        <label for="">Categoría</label>
-                        <input class="producto__categoria" type="text" name="producto" required placeholder="consolas" data-category>
-                    </div>
-                    <div class="input__container">
-                        <label for="">Nombre del producto</label>
-                        <input class="producto__nombre" type="text" name="nombre" data-name>
-                    </div>
-                    <div class="input__container">
-                        <label for="precio">Precio del producto</label>
-                        <input class="producto__precio" type="text" required placeholder="$200.00" data-price>
-                    </div>
-                    <div class="input__container">
-                        <label for="">Descripción del producto</label>
-                        <textarea class="producto__descripcion" name="description" cols="30" rows="10" data-description></textarea>
-                    </div>
-                    <input class="input__btn" type="submit" value="Agregar producto">
-                </form>
+        <section class="error">
+            <div class="error__ontainer">
+                <i class="bi bi-check-circle"></i>
+                <h3>El producto se actualizó</h3>
+                <a href="../screens/admin.html">Volver</a>
             </div>
-
         </section>
 
 
     </main>
-    <!-- Seccion footer -->
+
+
+
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__logolinks">
@@ -122,6 +101,8 @@
                     </ul>
                 </nav>
             </div>
+
+
             <form class="footer__contacto">
                 <h2>Hable con nosotros</h2>
                 <div class="contacto__nombre">
@@ -158,8 +139,8 @@
             <p>©SofiDev</p>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="../services/modules.js"></script>
-    <script type="module" src="../assets/controllers/addnew.controller.js"></script>
 </body>
+
+
 </html>

@@ -17,10 +17,10 @@ const crearNuevoProducto = (img, name, price, Description, category, id) => {
             <span>${price}</span>
         </div>
         <div class="editar__container">
-        <a href="/screens/agregar-producto.html" class="editaricono" ">
+        <a href="/screens/editar-producto.html?id=${id}" class="editaricono" ">
             <i class="bi bi-pencil"></i>
         </a>
-        <button type="button" class="eliminar__icono" id="${category}">
+        <button type="button" class="eliminar__icono" id="${id}">
             <i class="bi bi-trash"></i>
         </button>
     </div>
@@ -31,7 +31,7 @@ const crearNuevoProducto = (img, name, price, Description, category, id) => {
         const id = btneliminar.id;
         productServices.eliminarProducto(id)
         .then(response => {
-            console.log(response)
+            window.location.href = "/screens/exito-eliminar.html"
         }).catch(err => alert("Ocurrió un error"))
     })
 
@@ -43,9 +43,10 @@ const seccionAll = d.querySelector('[data-productos]');
 productServices.allProducts().then((data) => {
 	data.forEach(({img, name, price, Description, category, id}) => {
 		const nuevoTarjeta = crearNuevoProducto(
-			img,
+            img,
             name,
 			price,
+            Description,
 			category,
 			id
 		);

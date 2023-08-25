@@ -1,14 +1,6 @@
 {
   "product": [
     {
-      "img": "https://cdn.shopify.com/s/files/1/0563/9831/5692/files/luke-skywalker-lightsaber-hilt.png?v=1656863305",
-      "name": "Lightsaber",
-      "price": "$3000.00",
-      "Description": "Sable de luz para duelos",
-      "category": "starwars",
-      "id": 4
-    },
-    {
       "img": "https://www.cibermoda.mx/assets/images/craft_images/productos/Consola-Retro-Portatil-X12-Plus-pantalla-7-pulgadas-color-rojo-azul-joystick.webp",
       "name": "X12 Plus",
       "price": "$4500.00",
@@ -18,19 +10,19 @@
     },
     {
       "img": "https://revistasociosams.com/wp-content/uploads/2021/03/control-inalambrico-Xbox%E2%80%8B-1.png",
+      "category": "starwars",
       "name": "Control Xbox One",
       "price": "$950.00",
-      "Description": "Control Xbox serie One",
-      "category": "consolas",
-      "id": 2
+      "description": "ENDLESS CUSTOMIZATIONS - Handpick lighting effects, colors, brightness and more for 8 individual RGB zones using the free PDP Control Hub App. Here you can also re-map buttons, adjust deadzones, and sync audio.\nDESIGNED FOR IN-GAME EFFICIENCY - Adjust your game and chat audio on-the-fly using the audio controls located on the D-pad. Share your captured images and videos easily with the dedicated share button in the center.\nALL DAY GAMING ERGONOMICS - Laser-etched texture on grips & triggers provide comfort and accuracy. Includes an 8ft, detachable USB-C cable for plenty of room to play without the need for batteries.\nOFFICIALLY LICENSED - Officially licensed by Xbox for Xbox Series X|S, and compatible with Xbox One and Windows 10/11.\n1 MONTH FREE GAME PASS ULTIMATE - Includes 30-Days of Xbox Game Pass Free. Valid for new Xbox Game Pass Ultimate members only.",
+      "id": 515151
     },
     {
       "img": "https://www.incentivosblackhawk.com.mx/wp-content/uploads/2022/05/Steam.png",
+      "category": "consolas",
       "name": "Steam Card",
       "price": "$200.00",
-      "Description": "steam card 200 pelucholares",
-      "category": "consolas",
-      "id": 3
+      "description": "Tarjetas de Steam desde 200 pelucholares",
+      "id": 251541
     },
     {
       "img": "https://www.techpowerup.com/review/scuf-impact-controller-ps4-pc/images/small.png",
@@ -38,7 +30,7 @@
       "price": "$500.00",
       "Description": "Control de china",
       "category": "consolas",
-      "id": 4
+      "id": 62652
     },
     {
       "img": "https://virtumaniacos.com/wp-content/uploads/2022/03/playstation-vr-visor.webp",
@@ -46,7 +38,7 @@
       "price": "$4500.00",
       "Description": "Su versatilidad nos va a permitir usarlas en formato Standalone, es decir no depende de ningún otro elemento como cámaras o hardware externo, y esto las ha convertido el las gafas VR más vendidas desde 2020. Incluso puedes conectarlas a un ordenador (opcional) por cable o por wifi para jugar a juegos y usar aplicaciones aún más exigentes. ",
       "category": "consolas",
-      "id": 5
+      "id": 41451632
     },
     {
       "img": "https://otakutienda.com/cdn/shop/products/IMG_5186_580x.png?v=1644943571",
@@ -54,7 +46,7 @@
       "price": "$500.00",
       "Description": "Edición especial Pikachu Itachi  anbu",
       "category": "diversos",
-      "id": 1
+      "id": 425222523
     },
     {
       "img": "https://ggezstore.net/wp-content/uploads/2021/12/DEADPOOL-PIKACHU-e1640658722195.png",
@@ -62,15 +54,15 @@
       "price": "$250.00",
       "Description": "Pikachu edición deadpool",
       "category": "diversos",
-      "id": 2
+      "id": 521252225
     },
     {
       "img": "https://cdn.shopify.com/s/files/1/2437/4099/products/spider-man_marvel_silo_480x672.png?v=1649713239",
+      "category": "diversos",
       "name": "Spiderman Hot Toys",
       "price": "$660.00",
-      "Description": "Hot Toys CosRider: Marvel Spider Man Far From Home - Spider Man — Distrito Max",
-      "category": "diversos",
-      "id": 3
+      "description": "Spiderman Hot Toys chibi",
+      "id": 62626461232
     },
     {
       "img": "https://www.panupli.es/3364-large_default/funko-pop-es-dla-gandalf-montado-en-gwaihir.jpg",
@@ -78,7 +70,7 @@
       "price": "$600.00",
       "Description": "Colecciona el Funko POP de Gandalf montado en el águila Gwaihir de las increíbles películas de El Señor de los Anillos",
       "category": "diversos",
-      "id": 4
+      "id": 2632216515
     },
     {
       "img": "https://lemongamesmx.com/cdn/shop/products/fun55641-dragon-ball-z-cell-first-form-glow-in-the-dark-pop-vinyl-figure-popcultcha-01_480x480.png?v=1661980008",
@@ -86,7 +78,7 @@
       "price": "$450.00",
       "Description": "Cell primera forma, retroiluminado",
       "category": "diversos",
-      "id": 5
+      "id": 52320634841652
     },
     {
       "img": "https://cdn1.coppel.com/images/catalog/mkp/1773/5000/17733590-1.jpg",
@@ -105,20 +97,12 @@
       "id": "e5a56906-0e69-4c38-a99a-f24b587c0cba"
     },
     {
-      "img": "https://tooys.mx/media/wysiwyg/Darth_Vader-estatua-premium-format-por-sideshow-19.png",
+      "img": "https://tooys.mx/media/wysiwyg/heavy-weapons-clone-trooper-and-barc-speeder-with-sidecar_star-wars_13.png",
       "category": "starwars",
-      "name": "Darth Vader",
-      "price": "$500.00",
-      "description": "Darth Vader figura de colección",
-      "id": "c0b595e7-e395-48d2-91ee-395807483fb6"
-    },
-    {
-      "img": "https://tooys.mx/media/wysiwyg/Masked_Dedede-Dedede-standar-edition-kirby-statue-16.png",
-      "category": "diversos",
-      "name": "Masked Dedede",
-      "price": "$1829.00",
-      "description": "Masked Dedede Edicion Estandar 11.9 Pulgadas - Kirby Estatua Por First 4 Figures",
-      "id": "c7983239-356b-4a5f-953f-3bc1f0a5cac6"
+      "name": "CLONE TROOPER AND BARC SPEEDER ",
+      "price": "$3000.00",
+      "description": "HEAVY WEAPONS CLONE TROOPER AND BARC SPEEDER WITH SIDECAR - STAR WARS: THE CLONE WARS ESCALA 1:6 SET POR HOT TOYS\n",
+      "id": "1363e947-4d3b-4001-81eb-4b9e4e4fc777"
     }
   ]
 }

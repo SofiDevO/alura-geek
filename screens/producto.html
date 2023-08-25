@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../assets/styles/base/dark-mode.css">
     <link rel="stylesheet" href="../assets/styles/base/footer.css">
     <link rel="stylesheet" href="../assets/styles/producto-detalle/producto-detalle.css">
+    <link rel="stylesheet" href="../assets/styles/home/productos.css">
     
 </head>
 
@@ -70,122 +71,33 @@
         <section class="detalle">
             <div class="detalle__container">
                 <div class="detalle__img">
-                    <img src="https://revistasociosams.com/wp-content/uploads/2021/03/control-inalambrico-Xbox%E2%80%8B-1.png" alt="imagen producto">
+                    <img src="" alt="imagen producto" data-img>
                 </div>
                     <div class="detalle__descripcion">
-                        <h1 class="detalle__titulo">Producto XYZ</h1>
-                        <h4 class="detalle__precio">$ 60,00</h4>
-                        <p class="detalle__parrafo">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</p>
+                        <h1 class="detalle__titulo" data-name></h1>
+                        <h4 class="detalle__precio" data-price></h4>
+                        <p class="detalle__parrafo" data-description></p>
                 </div>
             </div>
         </section>
 <!-- Productos similares -->
-       <section class="similares">
-        <div class="productos__flia">
-            <div class="productos__barra">
-                <div class="productos__titulo">
-                    <h2 class="productos__titulo">Star Wars</h2>
-                </div>
+<section class="productos">
+
+    <div class="productos__flia" >
+        <div class="productos__barra">
+            <div class="productos__titulo">
+                <h2 class="productos__titulo">Productos relacionados</h2>
             </div>
-            <div class="productos__tarjetas">
-                <div class="productos__caja">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="https://www.claroshop.com/c/star-wars-day/img/categorias/TAZAS_CATEGORIAS_STAR_WARS.png"
-                                alt="starwars taza">
-                        </div>
-
-                        <div class="contentBx">
-
-                            <h2>Taza Trooper</h2>
-
-                            <div class="size">
-                                <h3>Precio:</h3>
-                                <span>$60.00</span>
-                            </div>
-                            <a href="#">Ver producto</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="productos__caja">
-                    <div class="card">
-                        <div class="imgBx vader">
-                            <img src="https://cdn1.coppel.com/images/catalog/mkp/1773/5000/17733590-1.jpg"
-                                alt="Funko Vader">
-                        </div>
-                        <div class="contentBx">
-
-                            <h2>Funko Vader</h2>
-
-                            <div class="size">
-                                <h3>Precio:</h3>
-                                <span>$180.00</span>
-                            </div>
-                            <a href="#">Ver producto</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="productos__caja none">
-                    <div class="card">
-                        <div class="imgBx grogu">
-                            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA12N6pr.img?w=500&h=500&m=6"
-                                alt="Grogu">
-                        </div>
-
-                        <div class="contentBx">
-
-                            <h2>Grogu (Baby Yoda)</h2>
-
-                            <div class="size">
-                                <h3>Precio:</h3>
-                                <span>$100.00</span>
-                            </div>
-                            <a href="#">Ver producto</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="productos__caja none">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="https://cdn.shopify.com/s/files/1/0563/9831/5692/files/luke-skywalker-lightsaber-hilt.png?v=1656863305"
-                                alt="Lightsaber">
-                        </div>
-
-                        <div class="contentBx">
-
-                            <h2>Lightsaber</h2>
-
-                            <div class="size">
-                                <h3>Precio:</h3>
-                                <span>$60.00</span>
-                            </div>
-                            <a href="#">Ver producto</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="productos__caja ">
-                    <div class="card">
-                        <div class="imgBx vader2">
-                            <img src="https://tooys.mx/media/wysiwyg/Darth_Vader-estatua-premium-format-por-sideshow-19.png"
-                                alt="Darth vader">
-                        </div>
-
-                        <div class="contentBx">
-
-                            <h2>Darth Vader </h2>
-
-                            <div class="size">
-                                <h3>Precio:</h3>
-                                <span>$450.00</span>
-                            </div>
-                            <a href="#">Ver producto</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <a href="../screens/productos.html" class="productos__verMas">
+                <h4>Ver más</h4>
+                <span class="productos__iconoFlecha"></span>
+            </a>
         </div>
-       </section>
+        <div class="productos__tarjetas" data-section="relacionados">
+            
+            
+        </div>
+    </div>
     </main>
 
 
@@ -244,5 +156,7 @@
     </div>
 </section>
 <script type="module" src="../services/modules.js"></script>
+<script type="module" src="../assets/controllers/producto-detalle.controller.js"></script>
+
 
 </body>
