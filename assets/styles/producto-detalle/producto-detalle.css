@@ -10,7 +10,7 @@
 	align-items: center;
 	gap: 1.6rem;
 	justify-content: center;
-	width: 75%;
+	max-width:  75%;
 	backdrop-filter: blur(9px);
 	background-color: rgba(255, 255, 255, 1);
 	border-radius: 41px;
