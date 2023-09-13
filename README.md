@@ -12,12 +12,7 @@ The challenge involves creating an online store based on the [FIGMA file](https:
 
 One of the key requirements is to implement CRUD (Create, Read, Update, Delete) operations using HTTP requests. This means we should be able to manage and manipulate products within our store, including reading, creating, deleting, and editing them.
 
-![Alt text](image.png)
-![Alt text](image-1.png)
-![Alt text](image-2.png)
-![Alt text](image-3.png)
-![Alt text](image-4.png)
-![Alt text](image-5.png)
+
 
 
 ## Technologies Used
@@ -43,3 +38,11 @@ If you'd like to contribute to this project or report issues, please feel free t
 ## Acknowledgments
 
 Don't forget to give this repository a star ⭐ if you find it useful!
+
+
+![Alt text](image.png)
+![Alt text](image-1.png)
+![Alt text](image-2.png)
+![Alt text](image-3.png)
+![Alt text](image-4.png)
+![Alt text](image-5.png)
