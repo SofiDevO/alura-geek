@@ -23,6 +23,10 @@
     color: greenyellow;
 }
 
+.error__ontainer .bi-x-circle {
+    color: red;
+}
+
 .error__ontainer h3{
     font-size: 1.8rem;
     font-family: "Montserrat";
