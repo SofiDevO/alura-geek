@@ -24,7 +24,7 @@ window.addEventListener("scroll", (e) => {
 iconBuscar.addEventListener("click", () => {
 	let buscar = inputSearch.value
 	if (buscar.trim() !== "") {
-		window.location.href = `/screens/busqueda.html?query=${encodeURIComponent(buscar)}`;
+		window.location.href = `./screens/busqueda.html?query=${encodeURIComponent(buscar)}`;
 	  }
 		
 
