@@ -40,7 +40,7 @@ const crearNuevoProducto = (img, name, price, Description, category, id) => {
             <h3>Precio</h3>
             <span>${price}</span>
         </div>
-        <a href="./screens/producto.html?category=${category}&id=${id}">Ver producto</a>
+        <a href="./producto.html?category=${category}&id=${id}">Ver producto</a>
     `;
 	tarjeta.innerHTML = contenido;
 	return tarjeta;
@@ -52,4 +52,4 @@ productServices.relacionados().then((data) => {
 		const nuevaTarjeta = crearNuevoProducto(img, name, price, Description, category, id);
 		productosRelacionados.appendChild(nuevaTarjeta);
 	});
-}).catch((err)=> console('ocurrió un error'));
+}).catch((err)=> console.log('ocurrió un error'));
