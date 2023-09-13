@@ -38,7 +38,7 @@ formulario.addEventListener("submit", (event)=>{
 	const description = d.querySelector("[data-description]").value;
     productServices.actualizarProducto(img, category, name, price, description,id)
     .then(()=>{
-        window.location.href = "/screens/exito.html"
+        window.location.href = "./screens/exito.html"
     });
 
 })
