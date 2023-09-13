@@ -1,0 +1,17 @@
+.not-found img {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.not-found h3 {
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.productos__flia {
+    padding: 12rem 0;
+}
+
+

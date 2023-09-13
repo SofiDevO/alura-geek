@@ -1,6 +1,9 @@
 import { productServices } from "../../services/product-service.js";
 
 const d = document;
+
+
+
 const crearNuevoProducto = (img, name, price, Description, category, id) => {
 	const tarjeta = d.createElement("div");
 	tarjeta.classList.add("productos__caja");
@@ -10,31 +13,16 @@ const crearNuevoProducto = (img, name, price, Description, category, id) => {
         <img src="${img}"
             alt="imagen producto">
     </div>
-    <div class="contentBx">
+        <div class="contentBx">
         <h2>${name}</h2>
-        <div class="price">
+        <div class="size">
             <h3>Precio</h3>
             <span>${price}</span>
         </div>
-        <div class="editar__container">
-        <a href="/screens/editar-producto.html?id=${id}" class="editaricono" ">
-            <i class="bi bi-pencil"></i>
-        </a>
-        <button type="button" class="eliminar__icono" id="${id}">
-            <i class="bi bi-trash"></i>
-        </button>
-    </div>
+        <a href="/screens/producto.html?category=${category}&id=${id}">Ver producto</a>
+    
     `;
 	tarjeta.innerHTML = contenido;
-    const btneliminar = tarjeta.querySelector("button")
-    btneliminar.addEventListener("click", ()=>{
-        const id = btneliminar.id;
-        productServices.eliminarProducto(id)
-        .then(response => {
-            window.location.href = "/screens/exito-eliminar.html"
-        }).catch(err => alert("Ocurrió un error"))
-    })
-
 	return tarjeta;
 };
 

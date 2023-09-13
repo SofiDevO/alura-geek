@@ -10,7 +10,7 @@
     },
     {
       "img": "https://revistasociosams.com/wp-content/uploads/2021/03/control-inalambrico-Xbox%E2%80%8B-1.png",
-      "category": "starwars",
+      "category": "consolas",
       "name": "Control Xbox One",
       "price": "$950.00",
       "description": "ENDLESS CUSTOMIZATIONS - Handpick lighting effects, colors, brightness and more for 8 individual RGB zones using the free PDP Control Hub App. Here you can also re-map buttons, adjust deadzones, and sync audio.\nDESIGNED FOR IN-GAME EFFICIENCY - Adjust your game and chat audio on-the-fly using the audio controls located on the D-pad. Share your captured images and videos easily with the dedicated share button in the center.\nALL DAY GAMING ERGONOMICS - Laser-etched texture on grips & triggers provide comfort and accuracy. Includes an 8ft, detachable USB-C cable for plenty of room to play without the need for batteries.\nOFFICIALLY LICENSED - Officially licensed by Xbox for Xbox Series X|S, and compatible with Xbox One and Windows 10/11.\n1 MONTH FREE GAME PASS ULTIMATE - Includes 30-Days of Xbox Game Pass Free. Valid for new Xbox Game Pass Ultimate members only.",
@@ -103,6 +103,30 @@
       "price": "$3000.00",
       "description": "HEAVY WEAPONS CLONE TROOPER AND BARC SPEEDER WITH SIDECAR - STAR WARS: THE CLONE WARS ESCALA 1:6 SET POR HOT TOYS\n",
       "id": "1363e947-4d3b-4001-81eb-4b9e4e4fc777"
+    },
+    {
+      "img": "https://tooys.mx/media/wysiwyg/DARTH-VADER-MYTHOS-estatua-por-sideshow-22.png",
+      "category": "starwars",
+      "name": "DARTH VADER MYTHOS ",
+      "price": "$3500",
+      "description": "Sideshow presenta la estatua de los mitos de Darth Vader™, una adición del lado oscuro a tu galaxia de coleccionables de Star Wars™ .",
+      "id": "3b7b6984-147e-4c8d-9fe5-448c04837ba2"
+    },
+    {
+      "img": "https://www.lego.com/cdn/cs/set/assets/bltde62e4576a817dd4/75349.png",
+      "category": "starwars",
+      "name": " Capitán Rex  - lego",
+      "price": "$600.00",
+      "description": "Casco del Capitán Rex 75349 | Star Wars™ | Oficial LEGO® Shop MX",
+      "id": "39c7eb06-84e4-4029-93f5-3f16c63d9857"
+    },
+    {
+      "img": "https://www.distritomax.com/cdn/shop/products/yoda_star-wars_silo_480x716.png?v=1648847363",
+      "category": "starwars",
+      "name": "Wars - Yoda Escala 1/6",
+      "price": "$4900.00",
+      "description": "Sideshow Collectibles: Star Wars The Clone Wars - Yoda Escala 1/6\n\n\"Para responder al poder con poder, la forma Jedi no lo es\".\n\nSideshow presenta la figura coleccionable del del icónico maestro Yoda, Inspirado en la popular serie animada de Star Wars: The Clone Wars, La figura de Yoda se une a la galaxia de coleccionables de escala 1/6 de Sideshow.",
+      "id": "35294dee-78ed-420a-a6c6-594fca24c30e"
     }
   ]
 }

@@ -2,17 +2,16 @@ import { productServices } from "../../services/product-service.js";
 
 const d = document;
 const seccionStarwars = d.querySelector('[data-section="starwars"]');
-const seccioncConsolas = d.querySelector('[data-section="consolas"]');
+const seccionConsolas = d.querySelector('[data-section="consolas"]');
 const seccionDiversos = d.querySelector('[data-section="diversos"]');
 
-const crearNuevoProducto = (img, name, price, Description, category, id) => {
-	const tarjeta = d.createElement("div");
-	tarjeta.classList.add("productos__caja");
-	const contenido = `
+const crearNuevoProducto = (img, name, price, description, category, id) => {
+  const tarjeta = d.createElement("div");
+  tarjeta.classList.add("productos__caja");
+  const contenido = `
     <div class="card">
     <div class="imgBx">
-        <img src="${img}"
-            alt="${name}">
+        <img src="${img}" alt="${name}">
     </div>
     <div class="contentBx">
         <h2>${name}</h2>
@@ -21,30 +20,21 @@ const crearNuevoProducto = (img, name, price, Description, category, id) => {
             <span>${price}</span>
         </div>
         <a href="./screens/producto.html?category=${category}&id=${id}">Ver producto</a>
-    `;
-	tarjeta.innerHTML = contenido;
-	return tarjeta;
+    </div>
+  `;
+  tarjeta.innerHTML = contenido;
+  return tarjeta;
 };
 
+function mostrarProductosEnSeccion(seccion, fetchData) {
+  productServices[fetchData]().then((data) => {
+    data.forEach(({ img, name, price, Description, category, id }) => {
+      const nuevaTarjeta = crearNuevoProducto(img, name, price, Description, category, id);
+      seccion.appendChild(nuevaTarjeta);
+    });
+  }).catch((err) => alert('Ocurrió un error'));
+}
 
-productServices.starwars().then((data) => {
-	data.forEach(({img, name, price, Description, category, id}) => {
-		const nuevoTarjeta = crearNuevoProducto(img, name, price, Description, category, id);
-		seccionStarwars.appendChild(nuevoTarjeta);
-	});
-}).catch((err)=> alert('ocurrió un error'));
-
-productServices.consolas().then((data) => {
-	data.forEach(({img, name, price, Description, category, id}) => {
-		const nuevoTarjeta = crearNuevoProducto(img, name, price, Description, category, id);
-		seccioncConsolas.appendChild(nuevoTarjeta);
-	});
-}).catch((err)=> alert('ocurrió un error'));
-
-productServices.diversos().then((data) => {
-	data.forEach(({img, name, price, Description, category, id}) => {
-		const nuevoTarjeta = crearNuevoProducto(img, name, price, Description, category, id);
-		seccionDiversos.appendChild(nuevoTarjeta);
-	});
-})
-.catch((err)=> alert('ocurrió un error'));
+mostrarProductosEnSeccion(seccionStarwars, "starwars");
+mostrarProductosEnSeccion(seccionConsolas, "consolas");
+mostrarProductosEnSeccion(seccionDiversos, "diversos");

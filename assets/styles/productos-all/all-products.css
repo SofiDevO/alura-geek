@@ -208,13 +208,20 @@
 .productos__caja .card .contentBx .price span {
 	width: 61px;
 	text-align: center;
-	font-size: 18px;
 	display: inline-block;
 	margin: 0 5px;
 	transition: 0.5s;
 	color: #000000;
 	cursor: pointer;
 }
+
+.size span{
+	font-size: 2rem;
+
+}
+
+
+
 .editar__container{
 	gap: 3.4rem;
     display: inline-flex;
@@ -296,6 +303,11 @@
 		display: flex;
 		justify-content: flex-start;
 		width: 100%;
+	}
+
+	.productos__flia {
+		
+		padding: 27.4rem 0;
 	}
 		
 }

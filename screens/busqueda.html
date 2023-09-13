@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todos los productos</title>
+    <title>Producto</title>
     <link rel="shortcut icon" href="../assets/svg/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -17,14 +17,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
         integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-        <!-- Styles -->
-        <link rel="stylesheet" href="../assets/styles/base/root.css">
-        <link rel="stylesheet" href="../assets/styles/base/header.css">
-        <link rel="stylesheet" href="../assets/styles/base/dark-mode.css">
-        <link rel="stylesheet" href="../assets/styles/base/footer.css">
-        <link rel="stylesheet" href="../assets/styles/productos-all/all-products.css">
-</head>
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/styles/base/root.css">
+    <link rel="stylesheet" href="../assets/styles/base/header.css">
+    <link rel="stylesheet" href="../assets/styles/base/dark-mode.css">
+    <link rel="stylesheet" href="../assets/styles/base/footer.css">
+    <link rel="stylesheet" href="../assets/styles/home/productos.css">
+    <link rel="stylesheet" href="../assets/styles/busqueda/busqueda.css">
     
+    
+</head>
 
 <body>
     <header class="header">
@@ -65,27 +67,24 @@
             </div>
         </div>
     </div>
-    <!-- Fin de cabecera -->
+
+
     <main>
-        <section class="productos">
-            <div class="contennedor">
-                <div class="productos__flia">
-                    <div class="productos__barra">
-                        <div class="productos__titulo">
-                            <h2 class="productos__titulo">Todos los productos</h2>
-                        </div>
-                    </div>
-
-                    <div class="productos__tarjetas" data-productos>
-
-                    </div>
+        <div class="productos__flia" >
+            <div class="productos__barra">
+                <div class="productos__titulo">
+                    <h2 class="productos__titulo">Resultados</h2>
                 </div>
+                <a href="./screens/productos.html" class="productos__verMas">
+                    <h4>Ver más</h4>
+                    <span class="productos__iconoFlecha"></span>
+                </a>
             </div>
+            <div class="productos__tarjetas" data-section>
+                
+                <!-- Aqui se inyecta el resultado por DOM -->
             </div>
-        </section>
-
-
-
+        </div>
 
     </main>
 
@@ -106,7 +105,7 @@
                     </ul>
                 </nav>
             </div>
-
+    
             <form class="footer__contacto">
                 <h2>Hable con nosotros</h2>
                 <div class="contacto__nombre">
@@ -118,7 +117,7 @@
                     <input class="nombre" type="email" placeholder="ejmplo@correo.com"
                         title="Este no es un correo válido" required>
                 </div>
-
+    
                 <textarea class="footer__textarea" name="" cols="30" rows="10" placeholder="Escribe tu mensaje"
                     required></textarea>
                 <input type="submit" class="submit">
@@ -144,9 +143,7 @@
         </div>
     </section>
     <script type="module" src="../services/modules.js"></script>
-    <script type="module" src="../assets/controllers/allProducts.controllers.js"></script>
-   
-
-</body>
-
-</html>
+    <script type="module" src="../assets/controllers/search.js"></script>
+    <script type="module" src="../assets/controllers/search.resultado.controller.js"></script>
+    
+    </body>

@@ -18,9 +18,10 @@ const obtenrDatos = async()=>{
 }
 obtenrDatos();
 
-
-
 /* productos relacionados */
+
+
+
 
 const productosRelacionados = d.querySelector('[data-section="relacionados"]');
 
@@ -46,8 +47,8 @@ const crearNuevoProducto = (img, name, price, Description, category, id) => {
 };
 
 
-productServices.relacionados().then((category) => {
-	category.forEach(({img, name, price, Description, category, id}) => {
+productServices.relacionados().then((data) => {
+	data.forEach(({img, name, price, Description, category, id}) => {
 		const nuevaTarjeta = crearNuevoProducto(img, name, price, Description, category, id);
 		productosRelacionados.appendChild(nuevaTarjeta);
 	});

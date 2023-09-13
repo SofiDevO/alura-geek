@@ -23,5 +23,9 @@ window.addEventListener("scroll", (e) => {
 /* Search function */
 iconBuscar.addEventListener("click", () => {
 	let buscar = inputSearch.value
-		console.log(buscar)
+	if (buscar.trim() !== "") {
+		window.location.href = `/screens/busqueda.html?query=${encodeURIComponent(buscar)}`;
+	  }
+		
+
 });
