@@ -41,11 +41,11 @@ first you need to install json server:
 npm install -g json-server
 ```
 
-Step 2 - Create a JSON File
-Create a JSON file in your project directory that will act as the data source. This JSON file should have a ```.json``` file extension. What do I mean? Let's say you want your JSON file name to be 'db', it means you'll create a file called db.json.
+Step 2 - Use the db.json File
+You need to use the ```db.json``` ALREADY created, that will act as the data source.  
 
 Step 3 - Start the Server
-Start up the JSON Server by typing this command into your terminal: json-server --watch db.json. This will run on "https://localhost:3000" by default. You can change the port it's running on by specifying a different port number when starting the server using the --port flag.
+Start up the JSON Server by typing this command into your terminal: ```json-server --watch db.json.``` This will run on "https://localhost:3000" by default. You can change the port it's running on by specifying a different port number when starting the server using the --port flag.
 
 JSON Server will automatically generate RESTful endpoints based on the data you defined in your JSON file.
 
@@ -57,6 +57,13 @@ POST /users - This creates a new user.
 PUT /users/:id - This updates a user based on a specified id.
 DELETE /users/:id - This deletes a user based on the specified id.
 This pattern makes it easy to interact with the mock API in a RESTful manner just like one would do with a real backend API.
+
+4 - Replace the VERCEL fake API, for this new resourse that you create with the ```json-server --watch db.json.``` command. It should look like this:
+
+![image](https://github.com/SofiDevO/alura-geek/assets/102200061/66f4c756-2b71-4ca2-840d-95ddc800aab6)
+
+Now you are able to make petitions to htttp. 
+
 
 
 ## Contributing
