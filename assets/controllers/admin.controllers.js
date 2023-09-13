@@ -51,4 +51,4 @@ productServices.allProducts().then((data) => {
 		);
 		seccionAll.appendChild(nuevoTarjeta);
 	});
-}).catch((err)=> alert('ocurrió un error'));
+}).catch((err)=> console.log('ocurrió un error'));
