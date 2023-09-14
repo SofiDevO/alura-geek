@@ -1,6 +1,11 @@
 // Define the base API URL
 const BASE_API_URL = "https://my-alura-geek-api.vercel.app/product";
 
+/* You can run "json-server -w -p 5555 db.json" to run as a local host 
+and use this resourse:
+http://localhost:5555/product in the BASE_APIURL
+*/
+
 // Generic function for making HTTP requests
 const fetchData = async (url, options = {}) => {
   const response = await fetch(url, options);

@@ -14,12 +14,14 @@
 
     
 .productos__flia {
-    display: flex;
+	display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 6.4rem 0 6.4rem 0;
+    margin: 48px 0 6.4rem 0;
     width: 100%;
 }
+
+
 
 .productos__barra {
 	display: flex;
@@ -206,7 +208,7 @@
 }
 
 .productos__caja .card .contentBx .price span {
-	width: 61px;
+	width: 6.1rem;
 	text-align: center;
 	display: inline-block;
 	margin: 0 5px;
@@ -217,6 +219,7 @@
 
 .size span{
 	font-size: 2rem;
+	color: var(--preto-100);
 
 }
 
@@ -241,6 +244,7 @@
 	border-radius: 38px;
 	box-shadow: 35px 35px 68px 0px rgba(215, 215, 215, 0.5), inset -8px -8px 16px 0px rgba(215, 215, 215, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 	margin-top: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.119);
 	text-decoration: none;
 	font-weight: 800;
 	color: #111;
@@ -306,8 +310,14 @@
 	}
 
 	.productos__flia {
-		
-		padding: 27.4rem 0;
+		display: flex;
+		margin: 14.3rem 0 6.4rem 0;
+		/* width: 100%; */
+		flex-direction: column;
+		align-items: center;
+	}
+	.all-products{
+		margin: 0rem 0 6.4rem ;
 	}
 		
 }

@@ -205,20 +205,19 @@
 
 .productos__caja .card .contentBx a {
 	display: inline-block;
-	padding: 10px 20px;
-	backdrop-filter: blur(5px);
-	background-color: rgba(255, 255, 255, 1);
-	border-radius: 38px;
-	box-shadow: -35px 35px 68px 0px rgba(6, 197, 255, 0.829),
-		inset 12px -12px 16px 0px rgba(31, 173, 255, 0.705),
-		inset 0px 11px 28px 0px rgb(221, 221, 221);
-	margin-top: 10px;
-	text-decoration: none;
-	font-weight: 800;
-	color: #111;
-	opacity: 0;
-	transform: translateY(40px);
-	transition: 0.5s;
+    padding: 10px 20px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 38px;
+    box-shadow: 35px 35px 68px 0px rgba(215, 215, 215, 0.5), inset -8px -8px 16px 0px rgba(215, 215, 215, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+    margin-top: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.119);
+    text-decoration: none;
+    font-weight: 800;
+    color: #111;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.5s;
 }
 
 .productos__caja .card:hover .contentBx a {

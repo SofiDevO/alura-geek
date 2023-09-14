@@ -6,6 +6,9 @@
     color: var(--preto-blanco);
 }
 
+.dark-mode .footer__contacto h2{
+    color: var(--preto-blanco);
+}
 
 
 .dark-mode .productos__titulo{
@@ -76,3 +79,10 @@ color: rgb(255, 255, 255);
     height: 50%;
 }
 
+.dark-mode .footer__links li a{
+    color: var(--preto-blanco);
+}
+
+.dark-mode .rodapie__container{
+    color: var(--preto-blanco);
+}
