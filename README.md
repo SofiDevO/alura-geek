@@ -1,6 +1,4 @@
-Por supuesto, aquí tienes el README actualizado con el enlace para clonar el repositorio:
 
----
 
 # AluraGeek Frontend Challenge Project
 
